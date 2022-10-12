@@ -1,0 +1,15 @@
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/bin/Debug/net6.0/TwoSum
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/bin/Debug/net6.0/TwoSum.deps.json
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/bin/Debug/net6.0/TwoSum.runtimeconfig.json
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/bin/Debug/net6.0/TwoSum.dll
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/bin/Debug/net6.0/TwoSum.pdb
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.AssemblyInfoInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.AssemblyInfo.cs
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.dll
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/refint/TwoSum.dll
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.pdb
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/TwoSum.genruntimeconfig.cache
+/Users/Bundy.Huang/Desktop/Katas/TwoSum/TwoSum/TwoSum/obj/Debug/net6.0/ref/TwoSum.dll
