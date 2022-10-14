@@ -1,0 +1,15 @@
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/bin/Debug/net6.0/GearBox
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/bin/Debug/net6.0/GearBox.deps.json
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/bin/Debug/net6.0/GearBox.runtimeconfig.json
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/bin/Debug/net6.0/GearBox.dll
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/bin/Debug/net6.0/GearBox.pdb
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.AssemblyInfoInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.AssemblyInfo.cs
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.dll
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/refint/GearBox.dll
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.pdb
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/GearBox.genruntimeconfig.cache
+/Users/Bundy.Huang/Desktop/Katas/GearBox/GearBox/obj/Debug/net6.0/ref/GearBox.dll

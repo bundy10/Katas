@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearBox", "GearBox\GearBox.csproj", "{81EE7C16-8E44-4566-B86D-784AF6622184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GearBoxTest", "GearBoxTest\GearBoxTest.csproj", "{27F7F441-F2DD-487D-B7C6-75B33419F89B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81EE7C16-8E44-4566-B86D-784AF6622184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EE7C16-8E44-4566-B86D-784AF6622184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EE7C16-8E44-4566-B86D-784AF6622184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EE7C16-8E44-4566-B86D-784AF6622184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27F7F441-F2DD-487D-B7C6-75B33419F89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F7F441-F2DD-487D-B7C6-75B33419F89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F7F441-F2DD-487D-B7C6-75B33419F89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F7F441-F2DD-487D-B7C6-75B33419F89B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
