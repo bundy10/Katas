@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
+using StringCalculator.Validator;
+
 namespace StringCalculator
 {
     public class CalculateString
@@ -9,12 +11,12 @@ namespace StringCalculator
         {
             if (!input.Any(char.IsDigit)) return 0;
             var numbers = new Numbers.Numbers();
-            numbers.Input = input; 
-            var result = numbers.GetNumbers();
-            return SumOfNumbers(result);
+            numbers.Input = input;
+            var validnumbers = new Validation();
+            validnumbers.numbers = numbers.GetNumbers();
+            return validnumbers.Validate();
         }
         
-        private int SumOfNumbers(IEnumerable<int> numbers) => numbers.Where(n => n <= 1000).Sum();
         
 
         // public static List<int> GetListOfIntsFromString(string input)

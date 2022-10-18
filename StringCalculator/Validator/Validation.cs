@@ -2,13 +2,27 @@ namespace StringCalculator.Validator;
 
 public class Validation
 {
-    public IEnumerable<int> negativeNumbers { get; set; }
+    public IEnumerable<int> negativeNumbers;
+    public IEnumerable<int> numbers { get; set; }
     public void ValidateNegativeNumbers()
-    {
-        if (negativeNumbers.Count() == 1)
+    { 
+        negativeNumbers = numbers.Where(n => n < 0);
+        if (negativeNumbers.Any())
         {
-            throw new Exception("Negatives not allowed");
+            if (negativeNumbers.Count() == 1)
+            {
+                throw new Exception("Negatives not allowed");
+            }
+            throw new Exception("Negatives not allowed: " + string.Join(", ", negativeNumbers));
         }
-        throw new Exception("Negatives not allowed: " + string.Join(", ", negativeNumbers));
     }
+
+    public int Validate()
+    {
+        ValidateNegativeNumbers();
+        return IgnoreNumbersOver1000Sum();
+
+    }
+
+    public int IgnoreNumbersOver1000Sum() => numbers.Where(n => n <= 1000).Sum();
 }

@@ -11,14 +11,6 @@ public class Numbers
     public IEnumerable<int> GetNumbers()
     {
         numbers = GetNumbersFromInput();
-        var validate = new Validation();
-        var negNumbers = numbers.Where(n => n < 0);;
-        validate.negativeNumbers = negNumbers;
-        if (validate.negativeNumbers.Any())
-        {
-            validate.ValidateNegativeNumbers();
-        }
-
         return numbers;
     }
 
