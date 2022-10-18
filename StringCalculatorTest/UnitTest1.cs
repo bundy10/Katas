@@ -11,9 +11,10 @@ public class UnitTest1
 
         //arrange
         const string input = "string";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.IsType<int>(actualResult);
@@ -26,9 +27,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(0, actualResult);
@@ -41,12 +43,13 @@ public class UnitTest1
 
         //arrange
         const int input = 8;
+        var calc = new CalculateString();
 
         //act
-        var actualresult = CalculateString.Calculate($"{input}");
+        var actualResult = calc.Calculate(input.ToString());
 
         //assert
-        Assert.Equal(input, actualresult);
+        Assert.Equal(input, actualResult);
     }
 
     //step 3
@@ -56,11 +59,13 @@ public class UnitTest1
 
     public void GivenTwoNumbers_WhenCalculateIsCalled_ThenReturnTheSumOfTheNumbers(int expectedResult, string input)
     {
+        var calc = new CalculateString();
+
         //act
-        var actualresult = CalculateString.Calculate($"{input}");
+        var actualResult = calc.Calculate(input);
 
         //assert
-        Assert.Equal(expectedResult, actualresult);
+        Assert.Equal(expectedResult, actualResult);
     }
 
 
@@ -72,11 +77,13 @@ public class UnitTest1
 
     public void GivenAnyAmountOfNumbers_WhenCalculateIsCalled_ThenReturnTheSumOfTheNumbers(int expectedResult, string input)
     {
+        var calc = new CalculateString();
+
         //act
-        var actualresult = CalculateString.Calculate($"{input}");
+        var actualResult = calc.Calculate(input);
 
         //assert
-        Assert.Equal(expectedResult, actualresult);
+        Assert.Equal(expectedResult, actualResult);
     }
 
     //step 5
@@ -86,11 +93,13 @@ public class UnitTest1
 
     public void GivenAnyAmountOfNumbersWithNewLinesAndCommas_WhenCalculateIsCalled_ThenReturnTheSumOfTheNumbersNewlinesAndCommasShouldBeInterchangeable(int expectedResult, string input)
     {
+        var calc = new CalculateString();
+
         //act
-        var actualresult = CalculateString.Calculate($"{input}");
+        var actualResult = calc.Calculate(input);
 
         //assert
-        Assert.Equal(expectedResult, actualresult);
+        Assert.Equal(expectedResult, actualResult);
     }
 
     //step 6
@@ -100,9 +109,10 @@ public class UnitTest1
 
         //arrange
         const string input = "//;\n1;2";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(3, actualResult);
@@ -115,9 +125,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "-1";
+        var calc = new CalculateString();
 
         //act
-        var exception = Assert.Throws<Exception>(() => CalculateString.Calculate(input));
+        var exception = Assert.Throws<Exception>(() => calc.Calculate(input));
 
         //assert
         Assert.Equal("Negatives not allowed", exception.Message);
@@ -129,9 +140,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "-1,2,-3";
+        var calc = new CalculateString();
 
         //act
-        var exception = Assert.Throws<Exception>(() => CalculateString.Calculate(input));
+        var exception = Assert.Throws<Exception>(() => calc.Calculate(input));
 
         //assert
         Assert.Equal("Negatives not allowed: -1, -3", exception.Message);
@@ -143,9 +155,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "2, 1001";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(2, actualResult);
@@ -158,9 +171,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "//[*****]\n1*****2*****3";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(6, actualResult);
@@ -172,9 +186,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "//[*][%]\n1*2%3";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(6, actualResult);
@@ -186,9 +201,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "//[***][#][%]\n1***2#3%4";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(10, actualResult);
@@ -200,9 +216,10 @@ public class UnitTest1
     {
         //arrange
         const string input = "//[*1*][%]\n1*1*2%3";
+        var calc = new CalculateString();
 
         //act
-        var actualResult = CalculateString.Calculate(input);
+        var actualResult = calc.Calculate(input);
 
         //assert
         Assert.Equal(6, actualResult);

@@ -1,0 +1,15 @@
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/bin/Debug/net6.0/TestProject13
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/bin/Debug/net6.0/TestProject13.deps.json
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/bin/Debug/net6.0/TestProject13.runtimeconfig.json
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/bin/Debug/net6.0/TestProject13.dll
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/bin/Debug/net6.0/TestProject13.pdb
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.AssemblyInfoInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.AssemblyInfo.cs
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.dll
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/refint/TestProject13.dll
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.pdb
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/TestProject13.genruntimeconfig.cache
+/Users/Bundy.Huang/Desktop/Katas/TestProject13/TestProject13/obj/Debug/net6.0/ref/TestProject13.dll

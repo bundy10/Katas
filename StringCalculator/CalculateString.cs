@@ -3,16 +3,18 @@ using System.Linq;
 using System.Text.RegularExpressions;
 namespace StringCalculator
 {
-    public static class CalculateString
+    public class CalculateString
     {
-        public static int Calculate(string input)
+        public int Calculate(string input)
         {
             if (!input.Any(char.IsDigit)) return 0;
-            var numbers = Numbers.GetNumbers(input);
-            return SumOfNumbers(numbers);
+            var numbers = new Numbers.Numbers();
+            numbers.Input = input; 
+            var result = numbers.GetNumbers();
+            return SumOfNumbers(result);
         }
         
-        private static int SumOfNumbers(IEnumerable<int> numbers) => numbers.Where(n => n <= 1000).Sum();
+        private int SumOfNumbers(IEnumerable<int> numbers) => numbers.Where(n => n <= 1000).Sum();
         
 
         // public static List<int> GetListOfIntsFromString(string input)

@@ -1,11 +1,15 @@
 ﻿using System;
+using Microsoft.VisualBasic;
+
 namespace StringCalculator
 {
-    public static class Program
+    public class Program
     {
         public static void Main()
         {
-            Console.WriteLine(CalculateString.Calculate("//[***]\n1***2***3"));
+            var input = "1";
+            var calc = new CalculateString();
+            var actualResult = calc.Calculate(input);
         }
     }
 }

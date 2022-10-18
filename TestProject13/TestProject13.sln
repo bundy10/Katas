@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject13", "TestProject13\TestProject13.csproj", "{2FD9D184-8DB0-4A5C-A561-47FF79791ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testsplit", "testsplit\testsplit.csproj", "{1A4D8790-C39D-4789-93BC-DDD28DE63EC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD9D184-8DB0-4A5C-A561-47FF79791ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD9D184-8DB0-4A5C-A561-47FF79791ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD9D184-8DB0-4A5C-A561-47FF79791ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD9D184-8DB0-4A5C-A561-47FF79791ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4D8790-C39D-4789-93BC-DDD28DE63EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4D8790-C39D-4789-93BC-DDD28DE63EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4D8790-C39D-4789-93BC-DDD28DE63EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4D8790-C39D-4789-93BC-DDD28DE63EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
