@@ -1,0 +1,6 @@
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/bin/Debug/Algorithm.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/bin/Debug/Algorithm.pdb
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/obj/Debug/Algorithm.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/obj/Debug/Algorithm.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/obj/Debug/Algorithm.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm/obj/Debug/Algorithm.pdb

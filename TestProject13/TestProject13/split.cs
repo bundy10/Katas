@@ -8,10 +8,10 @@ public class Split
         {
             input += "_";
         }
-        return Enumerable.Range(0, input.Length).Select(x => input.Substring(x, 2)).ToArray();
+        return Enumerable.Range(0, input.Length / 2).Select(x => input.Substring(x * 2, 2)).ToArray();
     }
         
-
+    Enumerable.Range(0, input.Length / 2).Select(Index => input.Substring(x*2, 2)).ToArray()
     // {
         // if (input.Length % 2 != 0)
         // {
@@ -29,6 +29,11 @@ public class Split
         //
         // return result;
     //
+    // check if input is odd or even if its odd, add a _ to string
+    // store number of elements we need for the list
+    // create string array result to take the number of elements
+    // loop through 4 times add pairs using substring to the array
+    //return array 
     //
     //
     // }

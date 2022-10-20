@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using StringCalculator.Validator;
 
+
 namespace StringCalculator
 {
     public class CalculateString
@@ -12,9 +13,9 @@ namespace StringCalculator
             if (!input.Any(char.IsDigit)) return 0;
             var numbers = new Numbers.Numbers();
             numbers.Input = input;
-            var validnumbers = new Validation();
-            validnumbers.numbers = numbers.GetNumbers();
-            return validnumbers.Validate();
+            var validator = new Validation();
+            validator.numbers = numbers.GetNumbers();
+            return validator.Validate();
         }
         
         

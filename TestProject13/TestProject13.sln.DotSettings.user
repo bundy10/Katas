@@ -1,15 +1,13 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5218a8a4_002D23b0_002D4692_002Da2d1_002D8bcd4f021dd3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenAString_WhenCalculateIsCalled_ThenReturnANumber #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::1A4D8790-C39D-4789-93BC-DDD28DE63EC1::net6.0::testsplit.UnitTest1.GivenAString_WhenCalculateIsCalled_ThenReturnANumber&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5218a8a4_002D23b0_002D4692_002Da2d1_002D8bcd4f021dd3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GivenAString_WhenCalculateIsCalled_ThenReturnANumber #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/Bundy.Huang/Desktop/Katas/TestProject13/testsplit" Presentation="&amp;lt;testsplit&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=57c029ec_002D18fd_002D4bfc_002Daab8_002D8972f6843368/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenAString_WhenCalculateIsCalled_ThenReturnANumber" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::1A4D8790-C39D-4789-93BC-DDD28DE63EC1::net6.0::testsplit.UnitTest1.GivenAString_WhenCalculateIsCalled_ThenReturnANumber&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc774814_002D25bb_002D4111_002Dbec8_002D7ba432abde2f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GivenAString_WhenCalculateIsCalled_ThenReturnANumber #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc774814_002D25bb_002D4111_002Dbec8_002D7ba432abde2f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenAString_WhenCalculateIsCalled_ThenReturnANumber #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::1A4D8790-C39D-4789-93BC-DDD28DE63EC1::net6.0::testsplit.UnitTest1.GivenAString_WhenCalculateIsCalled_ThenReturnANumber&lt;/TestId&gt;
   &lt;/TestAncestor&gt;

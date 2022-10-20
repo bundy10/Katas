@@ -24,5 +24,5 @@ public class Validation
 
     }
 
-    public int IgnoreNumbersOver1000Sum() => numbers.Where(n => n <= 1000).Sum();
+    public int IgnoreNumbersOver1000Sum() => numbers.Where(n => n <= 1000).Sum(); //refactor result should'nt be done in validator class
 }

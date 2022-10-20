@@ -1,0 +1,14 @@
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/Algorithm.Tests.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/Algorithm.Tests.pdb
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/Algorithm.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/xunit.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/xunit.runner.msbuild.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/xunit.runner.tdnet.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/xunit.runner.utility.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/Algorithm.pdb
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/bin/Debug/xunit.xml
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/obj/Debug/Algorithm.Tests.csproj.AssemblyReference.cache
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/obj/Debug/Algorithm.Tests.csproj.CoreCompileInputs.cache
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/obj/Debug/Algorithm.Tests.csproj.CopyComplete
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/obj/Debug/Algorithm.Tests.dll
+/Users/Bundy.Huang/Desktop/Katas/kata-composition/CSharp/Algorithm.Tests/obj/Debug/Algorithm.Tests.pdb
