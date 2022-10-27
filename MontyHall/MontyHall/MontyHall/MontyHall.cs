@@ -7,12 +7,12 @@ namespace MontyHall
     public class MontyHall
     {
         public MontyHall(
-            IEnumerable<DoorSelection> doorSelection,
-            IDoor door,
-            IStrategy strategy)
+            List<DoorCreation> doorCreation, // create number of doors
+            IPlayerChoice playerChoice, // player choice of door to select
+            IStrategy strategy) // to switch door or not to switch
         {
-            _doorSelection = doorSelection;
-            _door = door;
+            _doorCreation = doorCreation;
+            _playerChoice = playerChoice;
             _strategy = strategy;
 
             // get the doors
@@ -21,14 +21,13 @@ namespace MontyHall
             // simulate 1000 times
         }
 
-        public virtual DoorSelection PlayGame()
+        public virtual DoorCreation PlayGame()
         {
-            var doorSelection = _doorSelection;
-            doorSelection = _door.PickDoor(doorSelection);
-            return _strategy.Playgame(doorSelection);
+            return new DoorCreation(0);
         }
-        private readonly IEnumerable<DoorSelection> _doorSelection;
-        private readonly IDoor _door;
+        
+        private readonly List<DoorCreation> _doorCreation;
+        private readonly IPlayerChoice _playerChoice;
         private readonly IStrategy _strategy;
     }
 
