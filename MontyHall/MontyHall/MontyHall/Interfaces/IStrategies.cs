@@ -1,6 +1,6 @@
 namespace MontyHall.Interfaces;
 
-public interface IStrategy
+public interface IStrategies
 {
     
 }
