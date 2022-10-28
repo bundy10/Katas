@@ -9,7 +9,7 @@ public class Simulate : ISimulator
 {
     public List<int> Doors { get; set; }
 
-    public void Simulator(int numOfDoors, IPlayer player, HostSelection host, PriseInjector priseDoor)
+    public void Simulator(int numOfDoors, IPlayer player, HostSelection host, PrizeInjector prizeDoor)
     {
         var door = new Door();
         for (var i = 0; i < numOfDoors; i++)
