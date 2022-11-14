@@ -15,7 +15,7 @@ public class Simulator
     private readonly Host _theHost = new Host();
 
 
-    protected bool Simulate(IPlayer player)
+    public bool Simulate(IPlayer player)
     {
         
         _doors = Enumerable.Range(StartIndex, Door.GetCount())

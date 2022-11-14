@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{C3CA800D-42F1-49DF-A78B-8C8172F072FB}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MontyHall PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="MontyHall/GameMode/Simulate.cs">
     <Files>
       <File FileName="MontyHall/Strategies/StayPlayer.cs" Line="21" Column="6" />
@@ -11,7 +12,7 @@
       <File FileName="MontyHall/HostOperations/PrizeInjector.cs" Line="7" Column="2" />
       <File FileName="MontyHall/GameMode/Simulate.cs" Line="38" Column="1" />
       <File FileName="MontyHall/DoorCreation/Door.cs" Line="6" Column="2" />
-      <File FileName="MontyHall/GameMode/Simulate1000.cs" Line="8" Column="91" />
+      <File FileName="MontyHall/GameMode/Simulate1000.cs" Line="8" Column="2" />
       <File FileName="MontyHall/HostOperations/HostSelection.cs" Line="17" Column="1" />
       <File FileName="MontyHall/Interfaces/IGameAdmin.cs" Line="6" Column="56" />
       <File FileName="MontyHall/GameMode/Simulate10000.cs" Line="2" Column="28" />
@@ -41,8 +42,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.MontyHall PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
