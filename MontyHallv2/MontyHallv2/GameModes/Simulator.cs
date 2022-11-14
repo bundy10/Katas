@@ -28,6 +28,8 @@ public class Simulator
         GetPlayerDoorChoice();
         _doors[_playerChoice].PlayerPickedDoor(); // player picking door 
         _theHost.HostOpensADoor(_prizeDoor, _playerChoice); //host opens a non prize door and player door
+        
+        
         GameEnding();
 
     }
