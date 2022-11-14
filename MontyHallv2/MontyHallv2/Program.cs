@@ -12,6 +12,15 @@ namespace MontyHallv2
         {
             var game = new Simulator();
             game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+            game.Simulate(new StayPlayer());
+
         }
     }
 }

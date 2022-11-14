@@ -2,21 +2,21 @@ namespace MontyHallV2.DoorCreation;
 
 public class Door
 {
-    public bool Opened = false;
-    private bool _hasCar = false;
-    private bool _playerPicked = false;
+    private bool _opened;
+    private bool _hasCar;
+    private bool _playerPicked;
     private const int Count = 3;
 
     public static int GetCount() => Count;
 
+    public void OpeningDoor()
+    {
+        _opened = true;
+    }
+
     public void PlayerPickedDoor()
     {
         _playerPicked = true;
-    }
-
-    public bool IsDoorPickedByPlayer()
-    {
-        return _playerPicked;
     }
     public void InjectCarToDoor()
     {
@@ -25,6 +25,6 @@ public class Door
 
     public string WinOrLoss()
     {
-        return _hasCar ? "Congratulations you have won the car!!!" : "Sorry you have not won the car";
+        return _hasCar && _playerPicked ? "Congratulations you have won the car!!!" : "Sorry you have not won the car";
     }
 }

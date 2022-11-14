@@ -8,10 +8,12 @@ public class Simulator
 {
     private List<Door> _doors;
     private IPlayer _player;
-    private int _prizeDoor;
     private const int StartIndex = 1;
+    private int _prizeDoor;
     private int _playerChoice;
-    private Host _theHost = new Host();
+    private int _hostDoor;
+    private readonly Host _theHost = new Host();
+    
     
 
 
@@ -27,7 +29,8 @@ public class Simulator
         _player = player;
         GetPlayerDoorChoice();
         _doors[_playerChoice].PlayerPickedDoor(); // player picking door 
-        _theHost.HostOpensADoor(_prizeDoor, _playerChoice); //host opens a non prize door and player door
+        _hostDoor = _theHost.HostOpensADoor(_prizeDoor, _playerChoice); //host opens a non prize door and player door
+        _doors[_hostDoor].OpeningDoor();
         
         
         GameEnding();
