@@ -15,7 +15,11 @@ public class Simulator1000
             {
                 _gamesWon++;
             }
+
+            
         }
+        var losses = 1000 - _gamesWon;
+        Console.WriteLine($"{_gamesWon} games won and {losses} games lost");
     }
     
 }
