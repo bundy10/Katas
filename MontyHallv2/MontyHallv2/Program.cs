@@ -10,16 +10,8 @@ namespace MontyHallv2
     {
         public static void Main(string[] args)
         {
-            var game = new Simulator();
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
-            game.Simulate(new StayPlayer());
+            var game = new Simulator1000();
+            game.Simulate1000(new StayPlayer());
 
         }
     }

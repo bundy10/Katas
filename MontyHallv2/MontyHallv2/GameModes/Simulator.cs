@@ -13,11 +13,9 @@ public class Simulator
     private int _playerChoice;
     private int _hostDoor;
     private readonly Host _theHost = new Host();
-    
-    
 
 
-    public void Simulate(IPlayer player)
+    protected bool Simulate(IPlayer player)
     {
         
         _doors = Enumerable.Range(StartIndex, Door.GetCount())
@@ -31,15 +29,21 @@ public class Simulator
         _doors[_playerChoice].PlayerPickedDoor(); // player picking door 
         _hostDoor = _theHost.HostOpensADoor(_prizeDoor, _playerChoice); //host opens a non prize door and player door
         _doors[_hostDoor].OpeningDoor();
-        
-        
-        GameEnding();
+
+
+        if (GameEnding() == "Congratulations you have won the car!!!")
+        {
+            return true;
+        }
+
+        return false;
 
     }
 
-    private void GameEnding()
+    private string GameEnding()
     {
-        Console.WriteLine(_doors[_playerChoice].WinOrLoss());
+        // Console.WriteLine(_doors[_playerChoice].WinOrLoss());
+        return _doors[_playerChoice].WinOrLoss();
     }
 
     private void GetPlayerDoorChoice()
