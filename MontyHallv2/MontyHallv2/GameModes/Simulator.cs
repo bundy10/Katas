@@ -15,7 +15,7 @@ public class Simulator
     
 
 
-    public Simulator(IPlayer player)
+    public void Simulate(IPlayer player)
     {
         
         _doors = Enumerable.Range(StartIndex, Door.GetCount())
@@ -36,7 +36,7 @@ public class Simulator
 
     private void GameEnding()
     {
-        _doors[_playerChoice].WinOrLoss();
+        Console.WriteLine(_doors[_playerChoice].WinOrLoss());
     }
 
     private void GetPlayerDoorChoice()

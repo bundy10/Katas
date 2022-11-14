@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using MontyHallV2.DoorCreation;
+using MontyHallV2.GameModes;
 using MontyHallV2.Interfaces;
+using MontyHallv2.Strategies;
 
 namespace MontyHallv2
 {
@@ -12,11 +14,8 @@ namespace MontyHallv2
         private static readonly Random Random = new Random();
         public static void Main(string[] args)
         {
-            var list = Enumerable.Range(0, 3).Where(a => a != 0 ).ToArray();
-            foreach (var word in list)
-            {
-                Console.WriteLine(word);
-            }
+            var game = new Simulator();
+            game.Simulate(new StayPlayer());
         }
     }
 }
