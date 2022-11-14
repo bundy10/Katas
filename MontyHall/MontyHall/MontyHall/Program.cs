@@ -17,3 +17,16 @@ namespace MontyHall
         }
     }
 }
+
+
+
+
+var exclude = new HashSet<int>() { 1 };
+var range = Enumerable.Range(0, 3).Where(i => !exclude.Contains(i));
+
+var list = Enumerable.Range(0, 3).Where(a => a != 1).ToArray();
+
+foreach (var word in list)
+{
+    Console.WriteLine(word);
+}

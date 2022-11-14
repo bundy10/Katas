@@ -8,6 +8,9 @@ public class Simulator
     private List<Door> _doors;
     private IPlayer _player;
     private const int StartIndex = 1;
+    private int _playerChoice;
+    private readonly Random _random = new Random();
+    
 
     public Simulator(IPlayer player)
     {
@@ -17,6 +20,15 @@ public class Simulator
             .ToList();
         
         _player = player;
+        GetPlayerDoorChoice();
+        _doors[_playerChoice].PlayerPickedDoor();
+        
     }
-    
+
+    private void GetPlayerDoorChoice()
+    {
+        _player.ChooseDoor(_doors);
+        _playerChoice = _player.GetChoice();
+    }
+
 }
