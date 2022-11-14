@@ -12,8 +12,11 @@ namespace MontyHallv2
         private static readonly Random Random = new Random();
         public static void Main(string[] args)
         {
-            var hey = Random.Next(Door.GetCount());
-            Console.WriteLine(hey);
+            var list = Enumerable.Range(0, 3).Where(a => a != 0 ).ToArray();
+            foreach (var word in list)
+            {
+                Console.WriteLine(word);
+            }
         }
     }
 }
