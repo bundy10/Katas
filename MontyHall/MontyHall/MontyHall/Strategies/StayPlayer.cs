@@ -20,3 +20,6 @@ public class StayPlayer : IPlayer
         return _playerDoorChoice;
     }
 }
+
+
+

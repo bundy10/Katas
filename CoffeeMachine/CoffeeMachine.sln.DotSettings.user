@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5cbce7dd_002Da044_002D492f_002Da92d_002D79b502ad166e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenACommandIsSent_WhenGetCommandIsCalled_ThenReturnCommandString" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::4A97D263-D9F9-46D2-BA3D-D9D236E3E424::net6.0::CoffeeMachineTest.UnitTest1.GivenACommandIsSent_WhenGetCommandIsCalled_ThenReturnCommandString&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d68ef304_002D098e_002D421a_002D8aeb_002Db1e06f864326/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GivenACommandIsSent_WhenGetCommandIsCalled_ThenReturnCommandString #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::4A97D263-D9F9-46D2-BA3D-D9D236E3E424::net6.0::CoffeeMachineTest.UnitTest1.GivenACommandIsSent_WhenGetCommandIsCalled_ThenReturnCommandString&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -2,5 +2,5 @@ namespace MontyHall.DoorCreation;
 
 public class Door
 {
-    public List<int> Doors;
+    public List<int> doors = new List<int>();
 }
