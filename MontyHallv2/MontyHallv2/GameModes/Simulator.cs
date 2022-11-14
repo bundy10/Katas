@@ -1,7 +1,7 @@
-using MontyHallv2.DoorCreation;
-using MontyHallv2.Interfaces;
+using MontyHallV2.DoorCreation;
+using MontyHallV2.Interfaces;
 
-namespace MontyHallv2.GameModes;
+namespace MontyHallV2.GameModes;
 
 public class Simulator
 {

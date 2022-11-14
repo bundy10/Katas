@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Interfaces/IPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Interfaces/IPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668397913519</updated>
-      <workItem from="1668397918219" duration="5091000" />
+      <workItem from="1668397918219" duration="6433000" />
     </task>
     <servers />
   </component>
@@ -75,6 +77,17 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
