@@ -13,12 +13,13 @@ public class StayPlayer : IPlayer
         return _choice;
     }
 
-    public void ChooseDoor(List<Door> doors)
+    public List<Door> ChooseDoor(List<Door> doors)
     {
-        _choice = _random.Next(doors.Count);
+        doors[_random.Next(doors.Count)].PlayerPickedDoor();
+        return doors;
     }
 
-    public void SwitchDoor(List<Door> doors)
+    public void SwitchDoor(List<Door> doors, int playerChoice, int hostDoor)
     {
         _choice = _random.Next(doors.Count);
     }

@@ -7,19 +7,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="Add gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/HostOperations/Host.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/Host.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Interfaces/IPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Interfaces/IPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/Strategies/StayPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Strategies/StayPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Strategies/SwitchPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Strategies/SwitchPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/Interfaces/IPlayer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,8 +86,16 @@
       <updated>1668397913519</updated>
       <workItem from="1668397918219" duration="14383000" />
       <workItem from="1668451524859" duration="1661000" />
-      <workItem from="1668460591812" duration="4092000" />
+      <workItem from="1668460591812" duration="21327000" />
     </task>
+    <task id="LOCAL-00001" summary="Add gitignore">
+      <created>1668470853117</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668470853117</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 using MontyHallV2.DoorCreation;
 
-namespace MontyHallv2.HostOperations;
+namespace MontyHallv2.GameShowStaff;
 
 public class Host
 {
@@ -13,9 +13,9 @@ public class Host
         return _prizeInjector;
     }
 
-    public int HostOpensADoor(int prizeDoor, int playerChoiceOfDoor)
+    public List<Door> HostOpensADoor(List<Door> doors)
     {
-        var doorsAvailable = Enumerable.Range(0, 3).Where(a => a != prizeDoor && a != playerChoiceOfDoor).ToArray();
-        return doorsAvailable[0];
+        doors.First(door => door.HasCarOrPlayerPicked() != true).OpeningDoor();
+        return doors;
     }
 }

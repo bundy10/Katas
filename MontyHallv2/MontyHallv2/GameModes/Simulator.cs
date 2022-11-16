@@ -1,5 +1,5 @@
 using MontyHallV2.DoorCreation;
-using MontyHallv2.HostOperations;
+using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
 
 namespace MontyHallV2.GameModes;
@@ -10,46 +10,33 @@ public class Simulator
     private IPlayer _player;
     private const int StartIndex = 1;
     private int _prizeDoor;
-    private int _playerChoice;
     private int _hostDoor;
     private readonly Host _theHost = new Host();
+    private readonly GameMaster _gameMaster = new GameMaster();
 
 
     public bool Simulate(IPlayer player)
     {
-        
-        _doors = Enumerable.Range(StartIndex, Door.GetCount())
-            .Select(_ => new Door())
-            .ToList();
-
-        _prizeDoor = _theHost.InjectPrizeToDoor(_doors);
-        _doors[_prizeDoor].InjectCarToDoor(); // inject the prize to a door
+        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         _player = player;
-        GetPlayerDoorChoice();
-        _doors[_playerChoice].PlayerPickedDoor(); // player picking door 
-        _hostDoor = _theHost.HostOpensADoor(_prizeDoor, _playerChoice); //host opens a non prize door and player door
-        _doors[_hostDoor].OpeningDoor();
-
-
-        if (GameEnding() == "Congratulations you have won the car!!!")
-        {
-            return true;
-        }
-
-        return false;
-
+        _doors = player.ChooseDoor(_doors);
+        _doors = _theHost.HostOpensADoor(_doors); //host opens a non prize door and player door
+        GetPlayerSwitchChoiceOfDoor();
+        return GameEnding();
     }
 
-    private string GameEnding()
+    private bool GameEnding()
     {
         // Console.WriteLine(_doors[_playerChoice].WinOrLoss());
-        return _doors[_playerChoice].WinOrLoss();
+       // return _doors[_playerChoice].HasWon();
+       return true;
     }
+    
 
-    private void GetPlayerDoorChoice()
+    private void GetPlayerSwitchChoiceOfDoor()
     {
-        _player.ChooseDoor(_doors);
-        _playerChoice = _player.GetChoice();
+        //_player.SwitchDoor(_doors, _playerChoice, _hostDoor);
+        //_playerChoice = _player.GetChoice();
     }
 
 }

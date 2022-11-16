@@ -5,9 +5,9 @@ public class Door
     private bool _opened;
     private bool _hasCar;
     private bool _playerPicked;
-    private const int Count = 3;
+    private const int Count = 3; // refactor 
 
-    public static int GetCount() => Count;
+    public static int GetCount() => Count; // refactor
 
     public void OpeningDoor()
     {
@@ -18,13 +18,28 @@ public class Door
     {
         _playerPicked = true;
     }
+
+    public void PlayerUnpickDoor()
+    {
+        _playerPicked = false;
+    }
     public void InjectCarToDoor()
     {
         _hasCar = true;
     }
 
-    public string WinOrLoss()
+    public bool HasWon()
     {
-        return _hasCar && _playerPicked ? "Congratulations you have won the car!!!" : "Sorry you have not won the car";
+        return _hasCar && _playerPicked;
+    }
+
+    public bool HasCarOrPlayerPicked()
+    {
+        return _hasCar || _playerPicked;
+    }
+
+    public bool IsDoorOpened()
+    {
+        return _opened;
     }
 }

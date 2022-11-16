@@ -1,8 +1,9 @@
 using MontyHallV2.DoorCreation;
+using MontyHallV2.Interfaces;
 
 namespace MontyHallv2.Strategies;
 
-public class SwitchPlayer
+public class SwitchPlayer : IPlayer
 {
     private readonly Random _random = new Random();
     private int _choice;
@@ -12,14 +13,15 @@ public class SwitchPlayer
         return _choice;
     }
 
-    public void ChooseDoor(List<Door> doors)
+    public List<Door> ChooseDoor(List<Door> doors)
     {
-        _choice = _random.Next(doors.Count);
+        doors[_random.Next(doors.Count)].PlayerPickedDoor();
+        return doors;
     }
 
-    public void SwitchDoor(int playerChoice, int hostDoor)
+    public void SwitchDoor(List<Door> doors, int playerChoice, int hostDoor)
     {
-        var doorsAvailable = Enumerable.Range(0, 3).Where(a => a != hostDoor && a != playerChoice).ToArray();
+        var doorsAvailable = Enumerable.Range(0, doors.Count).Where(a => a != hostDoor && a != playerChoice).ToArray();
         _choice =  doorsAvailable[0];
     }
 }
