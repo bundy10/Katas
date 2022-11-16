@@ -5,9 +5,6 @@ public class Door
     private bool _opened;
     private bool _hasCar;
     private bool _playerPicked;
-    private const int Count = 3; // refactor 
-
-    public static int GetCount() => Count; // refactor
 
     public void OpeningDoor()
     {

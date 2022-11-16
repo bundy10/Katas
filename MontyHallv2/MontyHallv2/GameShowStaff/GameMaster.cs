@@ -4,12 +4,11 @@ namespace MontyHallv2.GameShowStaff;
 
 public class GameMaster
 {
-    private readonly Random _random = new Random();
-    
+    private readonly Random _random = new();
     
     public List<Door> CreateDoorsAndInjectCarToRandomDoor()
     {
-        var doors = Enumerable.Range(1, Door.GetCount())
+        var doors = Enumerable.Range(1, 3)
             .Select(_ => new Door())
             .ToList();
         

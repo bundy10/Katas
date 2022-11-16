@@ -6,12 +6,6 @@ namespace MontyHallv2.Strategies;
 public class SwitchPlayer : IPlayer
 {
     private readonly Random _random = new Random();
-    private int _choice;
-
-    public int GetChoice()
-    {
-        return _choice;
-    }
 
     public List<Door> ChooseDoor(List<Door> doors)
     {
@@ -21,7 +15,6 @@ public class SwitchPlayer : IPlayer
 
     public void SwitchDoor(List<Door> doors, int playerChoice, int hostDoor)
     {
-        var doorsAvailable = Enumerable.Range(0, doors.Count).Where(a => a != hostDoor && a != playerChoice).ToArray();
-        _choice =  doorsAvailable[0];
+        
     }
 }
