@@ -8,6 +8,7 @@ public class Simulator1000
 
     public void Simulate1000(IPlayer player)
     {
+        _gamesWon = 0;
         var game = new Simulator();
         for (var i = 0; i < 1000; i++)
         {

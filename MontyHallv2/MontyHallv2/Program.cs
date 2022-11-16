@@ -12,6 +12,7 @@ namespace MontyHallv2
         {
             var game = new Simulator1000(); 
             game.Simulate1000(new StayPlayer());
+            game.Simulate1000(new SwitchPlayer());
             
         }
     }

@@ -15,17 +15,12 @@ public class Simulator
     {
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         player.ChooseDoor(_doors);
-        _theHost.HostOpensADoor(_doors);
+        Host.HostOpensADoor(_doors);
         if (player.IsPlayerGoingToSwitch())
         {
             player.SwitchDoor(_doors);
         }
         
-        return GameEnding(_doors);
-    }
-
-    private static bool GameEnding(List<Door> doors)
-    { 
-      return doors.First(door => door.HasPlayerPicked()).HasWonTheCar();
+        return _doors.First(door => door.HasPlayerPicked()).HasWonTheCarOrNot();
     }
 }
