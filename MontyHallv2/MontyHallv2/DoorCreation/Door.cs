@@ -14,6 +14,11 @@ public class Door
         _opened = true;
     }
 
+    public bool HasPlayerPicked()
+    {
+        return _playerPicked;
+    }
+
     public void PlayerPickedDoor()
     {
         _playerPicked = true;
@@ -28,9 +33,9 @@ public class Door
         _hasCar = true;
     }
 
-    public bool HasWon()
+    public bool HasWonTheCar()
     {
-        return _hasCar && _playerPicked;
+        return _hasCar;
     }
 
     public bool HasCarOrPlayerPicked()

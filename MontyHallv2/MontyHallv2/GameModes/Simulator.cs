@@ -21,15 +21,12 @@ public class Simulator
         _player = player;
         _doors = player.ChooseDoor(_doors);
         _doors = _theHost.HostOpensADoor(_doors); //host opens a non prize door and player door
-        GetPlayerSwitchChoiceOfDoor();
-        return GameEnding();
+        return GameEnding(_doors);
     }
 
-    private bool GameEnding()
-    {
-        // Console.WriteLine(_doors[_playerChoice].WinOrLoss());
-       // return _doors[_playerChoice].HasWon();
-       return true;
+    private bool GameEnding(List<Door> doors)
+    { 
+      return doors.First(door => door.HasPlayerPicked()).HasWonTheCar();
     }
     
 
