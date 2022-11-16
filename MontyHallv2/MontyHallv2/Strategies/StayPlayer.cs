@@ -6,14 +6,21 @@ namespace MontyHallv2.Strategies;
 public class StayPlayer : IPlayer
 {
     private readonly Random _random = new Random();
+    private const bool SwitchOrNot = false;
+
     public List<Door> ChooseDoor(List<Door> doors)
     {
         doors[_random.Next(doors.Count)].PlayerPickedDoor();
         return doors;
     }
 
-    public void SwitchDoor(List<Door> doors, int playerChoice, int hostDoor)
+    public List<Door> SwitchDoor(List<Door> doors)
     {
-        // _choice = _random.Next(doors.Count);
+        return doors;
+    }
+
+    public bool IsPlayerGoingToSwitch()
+    {
+        return SwitchOrNot;
     }
 }

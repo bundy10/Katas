@@ -14,8 +14,13 @@ public class Simulator
     public bool Simulate(IPlayer player)
     {
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
-        _doors = player.ChooseDoor(_doors);
-        _doors = _theHost.HostOpensADoor(_doors);
+        player.ChooseDoor(_doors);
+        _theHost.HostOpensADoor(_doors);
+        if (player.IsPlayerGoingToSwitch())
+        {
+            player.SwitchDoor(_doors);
+        }
+        
         return GameEnding(_doors);
     }
 
