@@ -28,11 +28,4 @@ public class Simulator
     { 
       return doors.First(door => door.HasPlayerPicked()).HasWonTheCar();
     }
-    
-    private void GetPlayerSwitchChoiceOfDoor()
-    {
-        //_player.SwitchDoor(_doors, _playerChoice, _hostDoor);
-        //_playerChoice = _player.GetChoice();
-    }
-
 }

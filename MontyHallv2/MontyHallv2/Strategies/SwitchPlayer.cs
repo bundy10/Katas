@@ -16,7 +16,8 @@ public class SwitchPlayer : IPlayer
 
     public List<Door> SwitchDoor(List<Door> doors)
     {
-        //doors.First(door => door.HasPlayerPicked()).HasWonTheCar();
+        doors.RemoveAll(door => door.HasPlayerPicked());
+        doors.First(door => door.IsDoorOpened() == false).PlayerPickedDoor();
         return doors;
     }
     public bool IsPlayerGoingToSwitch()
