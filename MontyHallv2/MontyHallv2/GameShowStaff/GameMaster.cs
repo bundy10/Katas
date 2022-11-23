@@ -3,7 +3,7 @@ using MontyHallV2.Interfaces;
 
 namespace MontyHallv2.GameShowStaff;
 
-public class GameMaster
+public static class GameMaster
 {
     private static readonly Random Random = new();
     

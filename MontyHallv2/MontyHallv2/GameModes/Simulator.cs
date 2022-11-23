@@ -5,12 +5,12 @@ using MontyHallV2.Interfaces;
 
 namespace MontyHallV2.GameModes;
 
-public class Simulator
+public class Simulator : IGameMode
 {
     private List<Door>? _doors;
     private readonly SimulationPlayer _simulationPlayer = new();
     
-    public bool Simulate( IStrategy strategy)
+    public bool PlayGame( IStrategy strategy)
     {
         _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
         _simulationPlayer.ChooseDoor(_doors);

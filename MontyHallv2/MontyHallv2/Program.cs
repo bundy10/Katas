@@ -11,8 +11,8 @@ namespace MontyHallv2
         public static void Main(string[] args)
         {
             var game = new Simulator1000(); 
-            game.Simulate1000(new ToStay());
-            game.Simulate1000(new ToSwitch());
+            game.Simulate1000(new ToStay(), new Simulator());
+            game.Simulate1000(new ToSwitch(), new Simulator());
             
         }
     }

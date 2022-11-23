@@ -6,13 +6,13 @@ public class Simulator1000
 {
     private int _gamesWon;
 
-    public void Simulate1000(IStrategy strategy)
+    public void Simulate1000(IStrategy strategy, IGameMode gameMode)
     {
         _gamesWon = 0;
-        var game = new Simulator();
+        var game = gameMode;
         for (var i = 0; i < 1000; i++)
         {
-            if (game.Simulate(strategy))
+            if (game.PlayGame(strategy))
             {
                 _gamesWon++;
             }
