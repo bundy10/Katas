@@ -7,6 +7,7 @@ public class ToSwitch : IStrategy
 {
     public void ToSwitchOrStay(List<Door> doors)
     {
-        throw new NotImplementedException();
+        doors.RemoveAll(door => door.HasPlayerPicked());
+        doors.First(door => door.IsDoorOpened() == false).PlayerPickedDoor();
     }
 }

@@ -5,15 +5,15 @@ namespace MontyHallv2.GameShowStaff;
 
 public class GameMaster
 {
-    private readonly Random _random = new();
+    private static readonly Random Random = new();
     
-    public List<Door> CreateDoorsAndInjectCarToRandomDoor()
+    public static List<Door> CreateDoorsAndInjectCarToRandomDoor()
     {
         var doors = Enumerable.Range(1, 3)
             .Select(_ => new Door())
             .ToList();
         
-        doors[_random.Next(doors.Count)].InjectCarToDoor();
+        doors[Random.Next(doors.Count)].InjectCarToDoor();
         return doors;
     } 
 }
