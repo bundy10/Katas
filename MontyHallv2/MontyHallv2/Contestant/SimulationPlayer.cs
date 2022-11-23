@@ -2,7 +2,7 @@ using MontyHallV2.DoorCreation;
 
 namespace MontyHallv2.Contestant;
 
-public class Player
+public class SimulationPlayer
 {
     private readonly Random _random = new Random();
     
