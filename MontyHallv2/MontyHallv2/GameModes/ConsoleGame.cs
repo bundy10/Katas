@@ -22,6 +22,16 @@ public class ConsoleGame : IGameMode
         {
             strategy.ToSwitchOrStay(_doors);
         }
+
+        if (_doors.First(door => door.HasPlayerPicked()).HasWonTheCarOrNot())
+        {
+            Console.WriteLine("you have won the car");
+        }
+        else
+        {
+            Console.WriteLine("you did not win the car");
+        }
+
         return _doors.First(door => door.HasPlayerPicked()).HasWonTheCarOrNot();
     }
 }

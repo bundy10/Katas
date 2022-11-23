@@ -8,12 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Contestant/ConsolePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Contestant/ConsolePlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Interfaces/IGameMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Interfaces/IGameMode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
@@ -83,7 +78,7 @@
       <workItem from="1668999659519" duration="2106000" />
       <workItem from="1669074965968" duration="6472000" />
       <workItem from="1669163931876" duration="106000" />
-      <workItem from="1669164510419" duration="7316000" />
+      <workItem from="1669164510419" duration="7618000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
