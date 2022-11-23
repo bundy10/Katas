@@ -8,6 +8,7 @@ public class Simulator
 {
     private List<Door>? _doors;
     private readonly GameMaster _gameMaster = new();
+    private 
     
     public bool Simulate(IPlayer player, IStrategy strategy)
     {
