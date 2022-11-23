@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallv2", "MontyHallv2\MontyHallv2.csproj", "{97048D3C-7C48-4D82-8E1A-BC2D8C04EDBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallv2Test", "MontyHallv2Test\MontyHallv2Test.csproj", "{3F29C9E9-700E-44DC-885E-4289E58FCCC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1.moq", "TestProject1.moq\TestProject1.moq.csproj", "{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{97048D3C-7C48-4D82-8E1A-BC2D8C04EDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97048D3C-7C48-4D82-8E1A-BC2D8C04EDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97048D3C-7C48-4D82-8E1A-BC2D8C04EDBF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F29C9E9-700E-44DC-885E-4289E58FCCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F29C9E9-700E-44DC-885E-4289E58FCCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F29C9E9-700E-44DC-885E-4289E58FCCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F29C9E9-700E-44DC-885E-4289E58FCCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -22,5 +22,4 @@ public class SwitchPlayer : IPlayer
     {
         return SwitchOrNot;
     }
-    
 }

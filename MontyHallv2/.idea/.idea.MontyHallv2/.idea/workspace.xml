@@ -7,21 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="Add gitignore">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/MontyHallv2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/MontyHallv2.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/Strategies/SwitchPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Strategies/SwitchPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2Test/obj/Debug/net6.0/MontyHallv2Test.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2Test/obj/Debug/net6.0/MontyHallv2Test.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/DoorCreation/Door.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/Interfaces/IPlayer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,7 +81,11 @@
       <updated>1668397913519</updated>
       <workItem from="1668397918219" duration="14383000" />
       <workItem from="1668451524859" duration="1661000" />
-      <workItem from="1668460591812" duration="25050000" />
+      <workItem from="1668460591812" duration="28756000" />
+      <workItem from="1668999659519" duration="2106000" />
+      <workItem from="1669074965968" duration="6472000" />
+      <workItem from="1669163931876" duration="106000" />
+      <workItem from="1669164510419" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -83,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668470853117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored">
+      <created>1668578466156</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668578466156</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add gitignore" />
+    <MESSAGE value="Refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored" />
   </component>
 </project>

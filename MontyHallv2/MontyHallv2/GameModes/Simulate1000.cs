@@ -6,21 +6,22 @@ public class Simulator1000
 {
     private int _gamesWon;
 
-    public void Simulate1000(IPlayer player)
+    public void Simulate1000(IPlayer player, IStrategy strategy)
     {
         _gamesWon = 0;
         var game = new Simulator();
         for (var i = 0; i < 1000; i++)
         {
-            if (game.Simulate(player))
+            if (game.Simulate(player, strategy))
             {
                 _gamesWon++;
             }
 
             
         }
-        var losses = 1000 - _gamesWon;
-        Console.WriteLine($"{_gamesWon} games won and {losses} games lost");
+        var losses = ((1000 - _gamesWon) / 1000.0) * 100;
+        var gamesWon = (_gamesWon / 1000.0) * 100;
+        Console.WriteLine($"{gamesWon}% games won and {losses}% games lost");
     }
     
 }

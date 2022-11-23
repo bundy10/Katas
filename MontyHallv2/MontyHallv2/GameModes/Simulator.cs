@@ -7,11 +7,9 @@ namespace MontyHallV2.GameModes;
 public class Simulator
 {
     private List<Door>? _doors;
-    private readonly Host _theHost = new Host();
-    private readonly GameMaster _gameMaster = new GameMaster();
-
-
-    public bool Simulate(IPlayer player)
+    private readonly GameMaster _gameMaster = new();
+    
+    public bool Simulate(IPlayer player, IStrategy strategy)
     {
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         player.ChooseDoor(_doors);
