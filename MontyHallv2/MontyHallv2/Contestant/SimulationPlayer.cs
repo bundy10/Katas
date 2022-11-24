@@ -11,4 +11,9 @@ public class SimulationPlayer
     {
         doors[_random.Next(doors.Count)].PlayerPickedDoor();
     }
+
+    public void ChooseSwitchOrStay(IStrategy strategy, List<Door> doors)
+    {
+        strategy.ToSwitchOrStay(doors);
+    }
 }

@@ -7,15 +7,21 @@ namespace MontyHallV2.GameModes;
 
 public class Simulator : IGameMode
 {
-    private List<Door>? _doors;
     private readonly SimulationPlayer _simulationPlayer = new();
-    
-    public bool PlayGame( IStrategy strategy)
+    private readonly IStrategy _strategy;
+
+    public Simulator(IStrategy strategy)
     {
-        _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
-        _simulationPlayer.ChooseDoor(_doors);
-        Host.HostOpensADoor(_doors);
-        strategy.ToSwitchOrStay(_doors);
-        return _doors.First(door => door.HasPlayerPicked()).HasWonTheCarOrNot();
+        _strategy = strategy;
+    }
+
+    public void PlayerChooseDoor(List<Door> doors)
+    {
+        _simulationPlayer.ChooseDoor(doors);
+    }
+
+    public void PlayerSwitchOrStayDoor(List<Door> doors)
+    {
+        _simulationPlayer.ChooseSwitchOrStay(_strategy, doors);
     }
 }

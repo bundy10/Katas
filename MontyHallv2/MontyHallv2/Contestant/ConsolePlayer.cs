@@ -14,4 +14,9 @@ public class ConsolePlayer
         if (value != null) _choice = int.Parse(value) - 1;
         doors[_choice].PlayerPickedDoor();
     }
+    
+    public void ChooseSwitchOrStay(IStrategy strategy, List<Door> doors)
+    {
+        strategy.ToSwitchOrStay(doors);
+    }
 }

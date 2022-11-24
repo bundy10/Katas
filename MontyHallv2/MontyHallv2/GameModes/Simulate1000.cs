@@ -1,3 +1,4 @@
+using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
 
 namespace MontyHallV2.GameModes;
@@ -6,13 +7,13 @@ public class Simulator1000
 {
     private int _gamesWon;
 
-    public void Simulate1000(IStrategy strategy, IGameMode gameMode)
+    public void Simulate1000(IGameMode gameMode)
     {
         _gamesWon = 0;
-        var game = gameMode;
+        var game = new GamePlay(gameMode);
         for (var i = 0; i < 1000; i++)
         {
-            if (game.PlayGame(strategy))
+            if (game.PlayGame())
             {
                 _gamesWon++;
             }
