@@ -7,6 +7,7 @@ public class GamePlay
 {
     private readonly IGameMode _gameMode;
     private List<Door> _doors = new ();
+    private Host _host = new();
 
     public GamePlay(IGameMode gameMode)
     {
@@ -20,7 +21,7 @@ public class GamePlay
         // player/simulation choose a door
         _gameMode.PlayerChooseDoor(_doors);
         // host opens a door 
-        Host.HostOpensADoor(_doors);
+        _host.HostOpensADoor(_doors);
         // player/simulation gets option to switch
         _gameMode.PlayerSwitchOrStayDoor(_doors);
         // game ending - player door contains a car or not

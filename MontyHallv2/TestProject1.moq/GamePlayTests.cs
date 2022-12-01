@@ -40,13 +40,16 @@ public class GamePlayTests
         MockGameMode.Verify();
         //mockGameMode.Verify(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()), Times.Once);
     }
-    
+
+
     [Fact]
-    public void GivenPlayGameIsCalled_WhenPlayerChoosesADoor_ThenHostOpensADoor()
+    public void GivenPlayGameIsCalled_WhenHostOpensADoor_ThenPlayerPromptedToSwitchToADoor()
     {
         //Arrange
+        MockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor());
+
         MockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
-            .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor())
             .Verifiable();
         
         //Act
@@ -55,20 +58,25 @@ public class GamePlayTests
         //Assert
         MockGameMode.Verify();
     }
-
+    
+    
     [Fact]
-    public void GivenPlayGameIsCalled_WhenHostOpensADoor_ThenPlayerPromptedToSwitchToADoor()
+    public void GivenAPlayerHasPickedADoor_WhenThePlayerIsPromptedToSwitchOrStayDoor_ThenADoorShouldBeOpenedByTheHost()
     {
         //Arrange
-        MockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
-            .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor())
-            .Verifiable();
+        var isADoorOpened = false;
         
+        MockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor());
+
+        MockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(doors => isADoorOpened = doors.Any(door => door.IsDoorOpened()));
+
         //Act
         _gamePlay.PlayGame();
 
         //Assert
-        MockGameMode.Verify();
+        Assert.True(isADoorOpened);
     }
     
 

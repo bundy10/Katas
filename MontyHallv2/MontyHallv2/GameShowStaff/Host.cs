@@ -4,7 +4,7 @@ namespace MontyHallv2.GameShowStaff;
 
 public class Host
 {
-    public static void HostOpensADoor(List<Door> doors)
+    public void HostOpensADoor(List<Door> doors)
     {
         doors.First(door => door.HasCarOrPlayerPicked() != true).OpeningDoor();
     }
