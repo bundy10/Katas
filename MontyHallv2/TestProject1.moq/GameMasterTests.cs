@@ -6,7 +6,7 @@ using Moq;
 
 namespace TestProject1.moq;
 
-public class SimulatorTests
+public class GameMasterTests
 {
     [Fact]
     public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_WhenThreeDoorsAreCreatedThenADoorShouldContainACar()
