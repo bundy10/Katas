@@ -7,10 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="gameplay tests">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="host test">
+      <change afterPath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/Host.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/Host.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
@@ -20,6 +22,7 @@
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulatorTests.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/GameShowStaff/GamePlay.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/GameShowStaff/Host.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/GamePlayTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ff32d9e6a8ae52479379f35545f9a152fde5adb58a20dc4526c1c59bafe3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -87,7 +93,7 @@
       <workItem from="1669164510419" duration="19374000" />
       <workItem from="1669266396736" duration="5422000" />
       <workItem from="1669600243015" duration="34000" />
-      <workItem from="1669600293828" duration="15707000" />
+      <workItem from="1669600293828" duration="19129000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -124,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669688369592</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="game play test">
+      <created>1669865067449</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669865067449</updated>
+    </task>
+    <task id="LOCAL-00007" summary="host test">
+      <created>1669865088223</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669865088223</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +170,8 @@
     <MESSAGE value="refactored gameplay class" />
     <MESSAGE value="First GamePlayTest" />
     <MESSAGE value="gameplay tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="gameplay tests" />
+    <MESSAGE value="game play test" />
+    <MESSAGE value="host test" />
+    <option name="LAST_COMMIT_MESSAGE" value="host test" />
   </component>
 </project>

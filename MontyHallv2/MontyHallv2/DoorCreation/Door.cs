@@ -35,9 +35,9 @@ public class Door
         return _hasCar;
     }
 
-    public bool HasCarOrPlayerPicked()
+    public bool HasCar()
     {
-        return _hasCar || _playerPicked;
+        return _hasCar;
     }
 
     public bool IsDoorOpened()

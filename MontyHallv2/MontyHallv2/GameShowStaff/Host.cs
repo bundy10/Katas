@@ -6,6 +6,6 @@ public class Host
 {
     public void HostOpensADoor(List<Door> doors)
     {
-        doors.First(door => door.HasCarOrPlayerPicked() != true).OpeningDoor();
+        doors.First(door => door.HasCar() && door.HasPlayerPicked() != true).OpeningDoor();
     }
 }

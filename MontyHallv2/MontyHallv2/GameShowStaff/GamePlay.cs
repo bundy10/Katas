@@ -7,7 +7,7 @@ public class GamePlay
 {
     private readonly IGameMode _gameMode;
     private List<Door> _doors = new ();
-    private Host _host = new();
+    private readonly Host _host = new();
 
     public GamePlay(IGameMode gameMode)
     {

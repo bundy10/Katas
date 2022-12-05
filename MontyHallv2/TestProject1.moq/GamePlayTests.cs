@@ -13,8 +13,7 @@ public class GamePlayTests
 {
     private static readonly Mock<IGameMode> MockGameMode = new();
     private readonly GamePlay _gamePlay = new(MockGameMode.Object);
-    private readonly Host _host = new();
-    
+
     [Fact]
     public void GivenPlayGameIsCalled_WhenThreeDoorObjectsAreCreated_ThenPlayerPromptedToChooseADoor()
     {
