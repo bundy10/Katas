@@ -13,14 +13,13 @@ public class HostTests
     public void GivenHostOpensADoorIsCalled_ThenHostOpensADoor()
     {
         //Arrange
-        _doors = Enumerable.Range(1, 3)
-            .Select(_ => new Door())
-            .ToList();
+        _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
         //Act
         _host.HostOpensADoor(_doors);
-        var getResult = _doors.First(door => door.IsDoorOpened());
+        var getResult = _doors.FindAll(door => door.IsDoorOpened());
+        var result = getResult.Count;
         
         //Assert
-        Assert.True(getResult.IsDoorOpened());
+        Assert.Equal(1, result);
     }
 }
