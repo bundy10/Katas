@@ -8,16 +8,19 @@ public class GamePlay
     private readonly IGameMode _gameMode;
     private List<Door> _doors = new ();
     private readonly Host _host = new();
+    private readonly IRandom _random;
 
-    public GamePlay(IGameMode gameMode)
+    public GamePlay(IGameMode gameMode, IRandom random)
     {
         _gameMode = gameMode;
+        _random = random;
     }
 
     public bool PlayGame()
     {
         // create doors add prize to a door
-        _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var gameMaster = new GameMaster(_random);
+        _doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         // player/simulation choose a door
         _gameMode.PlayerChooseDoor(_doors);
         // host opens a door 

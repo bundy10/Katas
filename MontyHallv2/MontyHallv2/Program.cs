@@ -10,9 +10,9 @@ namespace MontyHallv2
     {
         public static void Main()
         {
-            var game = new Simulator1000();
+            /*var game = new Simulator1000();
             game.Simulate1000(new Simulator(new ToStay()));
-            game.Simulate1000(new Simulator(new ToSwitch()));
+            game.Simulate1000(new Simulator(new ToSwitch()));*/
         }
     }
 }

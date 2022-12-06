@@ -1,19 +1,30 @@
+using System.Resources;
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
+using MontyHallV2.Interfaces;
 using Moq;
 
 namespace TestProject1.moq;
 
 public class HostTests
 {
-    private List<Door> _doors = new();
-    private readonly Host _host = new();
+    private List<Door> _doors;
+    private readonly Host _host;
+    private readonly GameMaster _gameMaster;
 
+    public HostTests()
+    {
+        _doors = new List<Door>();
+        _host = new Host();
+        _gameMaster = new GameMaster();
+    }
+    
     [Fact]
     public void GivenHostOpensADoorIsCalled_ThenHostOpensADoor()
     {
         //Arrange
         _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        
         //Act
         _host.HostOpensADoor(_doors);
         var getResult = _doors.FindAll(door => door.IsDoorOpened());

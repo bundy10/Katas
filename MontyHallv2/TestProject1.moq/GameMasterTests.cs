@@ -8,15 +8,27 @@ namespace TestProject1.moq;
 
 public class GameMasterTests
 {
+    
+    /*[Fact]
+    public void */
     [Fact]
-    public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_WhenThreeDoorsAreCreatedThenADoorShouldContainACar()
+    public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_WhenThreeDoorsAreCreated_ThenADoorShouldContainACar()
     {
         //Arrange
-        var doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var mockRandom = new Mock<IRandom>();
+        var gameMaster = new GameMaster(mockRandom.Object);
+        mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        
+        
         //Act
-        var result = doors.Any(door => door.HasCar());
+        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        
+
+        var result = doors.FindAll(door => door.HasCar());
+        var results = result.Count();
+        
         
         //Assert
-        Assert.True(result);
+        Assert.Equal(1, results);
     }
 }

@@ -11,8 +11,16 @@ namespace TestProject1.moq;
 public class GamePlayTests
 
 {
-    private static readonly Mock<IGameMode> MockGameMode = new();
-    private readonly GamePlay _gamePlay = new(MockGameMode.Object);
+    private readonly Mock<IGameMode> _mockGameMode;
+    private readonly GamePlay _gamePlay;
+    private readonly Mock<IRandom> _mockRandom;
+
+    public GamePlayTests()
+    {
+        _mockGameMode = new Mock<IGameMode>();
+        _mockRandom = new Mock<IRandom>();
+        _gamePlay = new GamePlay(_mockGameMode.Object, _mockRandom.Object);
+    }
 
     [Fact]
     public void GivenPlayGameIsCalled_WhenThreeDoorObjectsAreCreated_ThenPlayerPromptedToChooseADoor()
@@ -24,7 +32,7 @@ public class GamePlayTests
         // var strategy = new ToStay();
         // var gameMode = new Simulator(strategy);
 
-        MockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor())
             .Verifiable();
         // .Return to expect a return from the function
@@ -36,7 +44,7 @@ public class GamePlayTests
         // Assert
         // We check if one of the three door objects has a PlayerPicked
         // check if player chooses a door
-        MockGameMode.Verify();
+        _mockGameMode.Verify();
         //mockGameMode.Verify(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()), Times.Once);
     }
 
@@ -45,17 +53,17 @@ public class GamePlayTests
     public void GivenPlayGameIsCalled_WhenHostOpensADoor_ThenPlayerPromptedToSwitchToADoor()
     {
         //Arrange
-        MockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor());
 
-        MockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
+        _mockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
             .Verifiable();
         
         //Act
         _gamePlay.PlayGame();
 
         //Assert
-        MockGameMode.Verify();
+        _mockGameMode.Verify();
     }
     
     
@@ -65,10 +73,10 @@ public class GamePlayTests
         //Arrange
         var isADoorOpened = false;
         
-        MockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor());
 
-        MockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
+        _mockGameMode.Setup(gameMode => gameMode.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => isADoorOpened = doors.Any(door => door.IsDoorOpened()));
 
         //Act

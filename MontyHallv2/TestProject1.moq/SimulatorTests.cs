@@ -8,20 +8,26 @@ namespace TestProject1.moq;
 
 public class SimulatorTests
 {
-    private static readonly Mock<IStrategy> Strategy = new();
-    private readonly Simulator _simulator = new(Strategy.Object);
+    private readonly Mock<IStrategy> _strategy;
+    private readonly Simulator _simulator;
+
+    public SimulatorTests()
+    {
+        _strategy = new Mock<IStrategy>();
+        _simulator = new Simulator(_strategy.Object);
+    }
 
     [Fact]
     public void GivenPlayerSwitchOrStayDoorIsCalled_ThenSimulationPlayerShouldBePromptedToSwitchOrStayAtADoor()
     {
         //Arrange
-        Strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(It.IsAny<List<Door>>())).Verifiable();
+        _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(It.IsAny<List<Door>>())).Verifiable();
         
         //Act
         _simulator.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>());
         
         //Assert
-        Strategy.Verify();
+        _strategy.Verify();
     }
 
     [Fact]

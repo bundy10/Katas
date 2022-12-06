@@ -3,17 +3,26 @@ using MontyHallV2.Interfaces;
 
 namespace MontyHallv2.GameShowStaff;
 
-public static class GameMaster
+public class GameMaster
 {
-    private static readonly Random Random = new();
+
+    private readonly IRandom _random;
+
     
-    public static List<Door> CreateDoorsAndInjectCarToRandomDoor()
+    public GameMaster(IRandom random)
+    {
+        _random = random;
+    }
+    
+    
+
+    public List<Door> CreateDoorsAndInjectCarToRandomDoor()
     {
         var doors = Enumerable.Range(1, 3)
             .Select(_ => new Door())
             .ToList();
         
-        doors[Random.Next(doors.Count)].InjectCarToDoor();
+        doors[_random.GetNumberBetweenRange(0, doors.Count - 1)].InjectCarToDoor();
         return doors;
     } 
 }

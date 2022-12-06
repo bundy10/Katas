@@ -1,4 +1,4 @@
-using MontyHallv2.GameShowStaff;
+/*using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
 
 namespace MontyHallV2.GameModes;
@@ -25,4 +25,4 @@ public class Simulator1000
         Console.WriteLine($"{gamesWon}% games won and {losses}% games lost");
     }
     
-}
+}*/
