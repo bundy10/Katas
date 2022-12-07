@@ -24,5 +24,5 @@ public class GameMaster
         
         doors[_random.GetNumberBetweenRange(0, doors.Count - 1)].InjectCarToDoor();
         return doors;
-    } 
+    }
 }

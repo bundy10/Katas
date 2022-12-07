@@ -10,7 +10,7 @@ public class Simulator1000
     public void Simulate1000(IGameMode gameMode, IRandom random)
     {
         _gamesWon = 0;
-        var game = new GamePlay(gameMode, random);
+        var game = new SimGamePlay(gameMode, random);
         for (var i = 0; i < 1000; i++)
         {
             if (game.PlayGame())

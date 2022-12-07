@@ -12,14 +12,14 @@ public class GamePlayTests
 
 {
     private readonly Mock<IGameMode> _mockGameMode;
-    private readonly GamePlay _gamePlay;
+    private readonly SimGamePlay _simGamePlay;
     private readonly Mock<IRandom> _mockRandom;
 
     public GamePlayTests()
     {
         _mockGameMode = new Mock<IGameMode>();
         _mockRandom = new Mock<IRandom>();
-        _gamePlay = new GamePlay(_mockGameMode.Object, _mockRandom.Object);
+        _simGamePlay = new SimGamePlay(_mockGameMode.Object, _mockRandom.Object);
     }
 
     [Fact]
@@ -39,7 +39,7 @@ public class GamePlayTests
 
         // Act
         // Call PlayGame on the gamePlay object
-        _gamePlay.PlayGame();
+        _simGamePlay.PlayGame();
 
         // Assert
         // We check if one of the three door objects has a PlayerPicked
@@ -60,7 +60,7 @@ public class GamePlayTests
             .Verifiable();
         
         //Act
-        _gamePlay.PlayGame();
+        _simGamePlay.PlayGame();
 
         //Assert
         _mockGameMode.Verify();
@@ -80,13 +80,9 @@ public class GamePlayTests
             .Callback<List<Door>>(doors => isADoorOpened = doors.Any(door => door.IsDoorOpened()));
 
         //Act
-        _gamePlay.PlayGame();
+        _simGamePlay.PlayGame();
 
         //Assert
         Assert.True(isADoorOpened);
     }
-    
-
-    
-
 }
