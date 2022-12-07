@@ -17,6 +17,10 @@ public class ConsolePlayer
     
     public void ChooseSwitchOrStay(IStrategy strategy, List<Door> doors)
     {
-        strategy.ToSwitchOrStay(doors);
+        var value = Console.ReadLine();
+        if (value == "y")
+        {
+            strategy.ToSwitchOrStay(doors);
+        }
     }
 }

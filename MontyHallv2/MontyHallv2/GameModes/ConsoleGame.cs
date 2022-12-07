@@ -2,6 +2,7 @@ using MontyHallv2.Contestant;
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
+using MontyHallv2.Strategies;
 
 namespace MontyHallV2.GameModes;
 
@@ -16,6 +17,6 @@ public class ConsoleGame : IGameMode
 
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
-        // _consolePlayer.ChooseSwitchOrStay(strategy, doors);
+        _consolePlayer.ChooseSwitchOrStay(new ToSwitch(), doors);
     }
 }
