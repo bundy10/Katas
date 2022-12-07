@@ -7,9 +7,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="refer to previous commit">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="Added a gameplay test and host test">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/SimGamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/HostTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/HostTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/SimulatorTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +44,8 @@
     <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/GameShowStaff/Host.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/GamePlayTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/GamePlayTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/HostTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ff32d9e6a8ae52479379f35545f9a152fde5adb58a20dc4526c1c59bafe3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -119,7 +137,7 @@
       <workItem from="1670280675709" duration="3416000" />
       <workItem from="1670301461886" duration="14000" />
       <workItem from="1670301493319" duration="4786000" />
-      <workItem from="1670369546236" duration="10043000" />
+      <workItem from="1670369546236" duration="17077000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -247,11 +265,81 @@
       <option name="project" value="LOCAL" />
       <updated>1670380015805</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added a gameplay test and host test">
+      <created>1670381933881</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670381933881</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="209" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallV2 58% 23/55" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallV2 58% 23/55" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 32% 23/34" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallV2 58% 23/55" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 32% 23/34" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Simulator 100% 0/11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallV2 58% 23/55" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 32% 23/34" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="ConsoleGame 0% 7/7" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallV2 58% 23/55" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 32% 23/34" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Simulator1000 0% 16/16" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 69% 97/318" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 51% 85/172" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 47% 62/117" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -286,6 +374,7 @@
     <MESSAGE value="added the console game logic" />
     <MESSAGE value="added a gameplay interface to implement console and simulation gameplays" />
     <MESSAGE value="refer to previous commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="refer to previous commit" />
+    <MESSAGE value="Added a gameplay test and host test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a gameplay test and host test" />
   </component>
 </project>

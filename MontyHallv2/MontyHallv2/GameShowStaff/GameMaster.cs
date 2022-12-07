@@ -14,8 +14,6 @@ public class GameMaster
         _random = random;
     }
     
-    
-
     public List<Door> CreateDoorsAndInjectCarToRandomDoor()
     {
         var doors = Enumerable.Range(1, 3)

@@ -38,6 +38,25 @@ public class HostTests
     }
     
     [Fact]
+    public void GivenHostOpensADoorIsCalled_WhenTheDoorsArePickedByPlayerOrContainsACar_ThenTheHostWillNotPickThatDoor()
+    {
+        //Arrange
+        const int carDoor = 2;
+        const int playerPickedDoor = 1;
+        const int expectedDoorToBeOpened = 0;
+        
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(carDoor);
+        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        
+        //Act
+        _doors[playerPickedDoor].PlayerPickedDoor();
+        _host.HostOpensADoor(_doors);
+        
+        //Assert
+        Assert.True(_doors[expectedDoorToBeOpened].IsDoorOpened());
+    }
+    
+    [Fact]
     public void GivenHostGameOutcomeIsCalled_WhenTheDoorThatContainsACarAndIsPickedByPlayer_ThenReturnTrue()
     {
         //Arrange
@@ -48,6 +67,14 @@ public class HostTests
         Assert.True(_host.HostGameOutcome(_doors));
     }
     
-
-
+    [Fact]
+    public void GivenHostGameOutcomeIsCalled_WhenTheDoorThatContainsACarAndIsNotPickedByPlayer_ThenReturnFalse()
+    {
+        //Arrange
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        _doors[1].PlayerPickedDoor();
+        
+        Assert.False(_host.HostGameOutcome(_doors));
+    }
 }

@@ -12,14 +12,14 @@ public class GamePlayTests
 
 {
     private readonly Mock<IGameMode> _mockGameMode;
-    private readonly SimGamePlay _simGamePlay;
+    private readonly GamePlay _gamePlay;
     private readonly Mock<IRandom> _mockRandom;
 
     public GamePlayTests()
     {
         _mockGameMode = new Mock<IGameMode>();
         _mockRandom = new Mock<IRandom>();
-        _simGamePlay = new SimGamePlay(_mockGameMode.Object, _mockRandom.Object);
+        _gamePlay = new GamePlay(_mockGameMode.Object, _mockRandom.Object);
     }
 
     [Fact]
@@ -39,7 +39,7 @@ public class GamePlayTests
 
         // Act
         // Call PlayGame on the gamePlay object
-        _simGamePlay.PlayGame();
+        _gamePlay.PlayGame();
 
         // Assert
         // We check if one of the three door objects has a PlayerPicked
@@ -60,7 +60,7 @@ public class GamePlayTests
             .Verifiable();
         
         //Act
-        _simGamePlay.PlayGame();
+        _gamePlay.PlayGame();
 
         //Assert
         _mockGameMode.Verify();
@@ -80,32 +80,40 @@ public class GamePlayTests
             .Callback<List<Door>>(doors => isADoorOpened = doors.Any(door => door.IsDoorOpened()));
 
         //Act
-        _simGamePlay.PlayGame();
+        _gamePlay.PlayGame();
 
         //Assert
         Assert.True(isADoorOpened);
     }
     
     [Fact]
-    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsPickedByAPlayer_ThenReturnTrue()
+    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsPickedByAPlayer_ThenPlayerHasWonTheCar()
     {
         //Arrange
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
         _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[2].PlayerPickedDoor());
-
-        Assert.True(_simGamePlay.PlayGame());
+        
+        //Act
+        var hasWon = _gamePlay.PlayGame();
+        
+        //Assert
+        Assert.True(hasWon);
     }
     
     [Fact]
-    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenReturnFalse()
+    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenPlayerHasLostTheCar()
     {
-        
+        //Arrange
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
         _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[1].PlayerPickedDoor());
         
-        Assert.False(_simGamePlay.PlayGame());
+        //Act
+        var hasWon = _gamePlay.PlayGame();
+        
+        //Assert
+        Assert.False(hasWon);
     }
     
 }

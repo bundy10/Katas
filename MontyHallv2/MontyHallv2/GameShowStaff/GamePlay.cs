@@ -3,14 +3,14 @@ using MontyHallV2.Interfaces;
 
 namespace MontyHallv2.GameShowStaff;
 
-public class SimGamePlay : IGamePlay
+public class GamePlay : IGamePlay
 {
     private readonly IGameMode _gameMode;
     private List<Door> _doors = new ();
     private readonly Host _host;
     private readonly GameMaster _gameMaster;
 
-    public SimGamePlay(IGameMode gameMode, IRandom random)
+    public GamePlay(IGameMode gameMode, IRandom random)
     {
         _gameMode = gameMode;
         _host = new Host();

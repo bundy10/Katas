@@ -32,6 +32,23 @@ public class SimulatorTests
     }
 
     [Fact]
+    public void
+        GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked()
+    {
+        var gameMaster = new GameMaster(new RandomNum());
+        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        doors[0].PlayerPickedDoor();
+        doors[1].PlayerPickedDoor();
+        
+        _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(doors))
+            .Callback<List<Door>>(door => door[2].PlayerPickedDoor());
+        
+        _simulator.PlayerSwitchOrStayDoor(doors);
+        
+        Assert.True(doors[2].HasPlayerPicked());
+    }
+
+    [Fact]
     public void GivenPlayerChooseDoorIsCalled_WhenSimulatorPlayerChoosesDoor_ThenADoorWillHaveBeenPicked()
     {
         //Arrange

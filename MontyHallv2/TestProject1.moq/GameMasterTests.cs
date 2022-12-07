@@ -1,4 +1,4 @@
-using MontyHallv2.Contestant;
+
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
@@ -21,6 +21,7 @@ public class GameMasterTests
     public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_ThenThreeDoorsShouldBeCreated()
     {
         //Arrange
+        const int expectedNumberOfDoors = 3; 
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(1);
         
         
@@ -28,28 +29,27 @@ public class GameMasterTests
         var doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         
         
-        var numberOfDoors = doors.Count;
+        var actualNumberOfDoors = doors.Count;
         
         
         //Assert
-        Assert.Equal(3, numberOfDoors);
+        Assert.Equal(expectedNumberOfDoors, actualNumberOfDoors);
     } 
     [Fact]
     public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_WhenThreeDoorsAreCreated_ThenADoorShouldContainACar()
     {
         //Arrange
+        const int expectedNumberOfDoorsWithACar = 1;
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
         
         
         //Act
         var doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
-        
-
-        var result = doors.FindAll(door => door.HasCar());
-        var results = result.Count;
+        var listOfDoorsWithACar = doors.FindAll(door => door.HasCar());
+        var actualNumberOfDoorsWithCar = listOfDoorsWithACar.Count;
         
         
         //Assert
-        Assert.Equal(1, results);
+        Assert.Equal(expectedNumberOfDoorsWithACar, actualNumberOfDoorsWithCar);
     }
 }

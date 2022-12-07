@@ -1,4 +1,4 @@
-using MontyHallv2.Contestant;
+
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
@@ -8,15 +8,22 @@ namespace MontyHallV2.GameModes;
 
 public class ConsoleGame : IGameMode
 {
-    private readonly ConsolePlayer _consolePlayer = new();
+    private int _choice;
 
     public void PlayerChooseDoor(List<Door> doors)
     {
-        _consolePlayer.ChooseDoor(doors);
+        var value = Console.ReadLine();
+        if (value != null) _choice = int.Parse(value) - 1;
+        doors[_choice].PlayerPickedDoor();
     }
 
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
-        _consolePlayer.ChooseSwitchOrStay(new ToSwitch(), doors);
+        var strategy = new ToSwitch();
+        var value = Console.ReadLine();
+        if (value == "y")
+        {
+            strategy.ToSwitchOrStay(doors);
+        }
     }
 }

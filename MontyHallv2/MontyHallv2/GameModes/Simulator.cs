@@ -1,27 +1,29 @@
-using MontyHallv2.Contestant;
+
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
+using MontyHallv2.Random;
 
 namespace MontyHallV2.GameModes;
 
 public class Simulator : IGameMode
 {
-    private readonly SimulationPlayer _simulationPlayer = new();
     private readonly IStrategy _strategy;
+    private readonly IRandom _random;
 
     public Simulator(IStrategy strategy)
     {
         _strategy = strategy;
+        _random = new RandomNum();
     }
 
     public void PlayerChooseDoor(List<Door> doors)
     {
-        _simulationPlayer.ChooseDoor(doors);
+        doors[_random.GetNumberBetweenRange(0, doors.Count)].PlayerPickedDoor();
     }
 
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
-        _simulationPlayer.ChooseSwitchOrStay(_strategy, doors);
+        _strategy.ToSwitchOrStay(doors);
     }
 }
