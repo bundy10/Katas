@@ -7,38 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/PadTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/Barista/DrinkMaker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/Drinks/Coffee.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/Drinks/HotChocolate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/Drinks/Tea.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/Parent/Drink.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/bin/Debug/net6.0/CoffeeMachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/bin/Debug/net6.0/CoffeeMachine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/bin/Debug/net6.0/CoffeeMachine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/bin/Debug/net6.0/CoffeeMachine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/CoffeeMachine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/ref/CoffeeMachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/ref/CoffeeMachine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/refint/CoffeeMachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachine/obj/Debug/net6.0/refint/CoffeeMachine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachine.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachine.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachine.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachine.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachineTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachineTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachineTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/bin/Debug/net6.0/CoffeeMachineTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/CoffeeMachineTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/ref/CoffeeMachineTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/ref/CoffeeMachineTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/refint/CoffeeMachineTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/obj/Debug/net6.0/refint/CoffeeMachineTest.dll" afterDir="false" />
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="random interface">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Contestant/SimulationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Contestant/SimulationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/DoorCreation/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/Contestant/ConsolePlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Contestant/ConsolePlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GameMaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/SimGamePlay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/Host.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/Host.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
@@ -48,10 +23,8 @@
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/HostTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/HostTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulationPlayerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/SimulationPlayerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/SimulatorTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CoffeeMachine/CoffeeMachineTest/PadTest1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ff32d9e6a8ae52479379f35545f9a152fde5adb58a20dc4526c1c59bafe3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -152,7 +126,7 @@
       <workItem from="1670280675709" duration="3416000" />
       <workItem from="1670301461886" duration="14000" />
       <workItem from="1670301493319" duration="4786000" />
-      <workItem from="1670369546236" duration="2766000" />
+      <workItem from="1670369546236" duration="8188000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -238,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670366953002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactoring random setting and added a few more tests">
+      <created>1670372382533</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670372382533</updated>
+    </task>
+    <task id="LOCAL-00014" summary="random interface">
+      <created>1670372410074</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670372410074</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +259,8 @@
     <MESSAGE value="simulationplayerTests" />
     <MESSAGE value="simulation player tests" />
     <MESSAGE value="changed random int method to an interface/ fixed testing senarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed random int method to an interface/ fixed testing senarios" />
+    <MESSAGE value="refactoring random setting and added a few more tests" />
+    <MESSAGE value="random interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="random interface" />
   </component>
 </project>
