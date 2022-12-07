@@ -2,6 +2,7 @@ using MontyHallv2.Contestant;
 using MontyHallV2.DoorCreation;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
+using MontyHallv2.Random;
 using MontyHallv2.Strategies;
 using Moq;
 
@@ -12,11 +13,12 @@ public class SimulationPlayerTest
     private readonly SimulationPlayer _simulationPlayer;
     private readonly List<Door> _doors;
     private readonly IStrategy _strategy;
+    private readonly GameMaster _gameMaster = new(new RandomNum());
 
     public SimulationPlayerTest()
     {
         // Arrange
-        _doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         _simulationPlayer = new SimulationPlayer();
         _strategy = new ToSwitch();
     }

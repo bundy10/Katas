@@ -1,4 +1,4 @@
-/*using MontyHallv2.GameShowStaff;
+using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
 
 namespace MontyHallV2.GameModes;
@@ -7,10 +7,10 @@ public class Simulator1000
 {
     private int _gamesWon;
 
-    public void Simulate1000(IGameMode gameMode)
+    public void Simulate1000(IGameMode gameMode, IRandom random)
     {
         _gamesWon = 0;
-        var game = new GamePlay(gameMode);
+        var game = new GamePlay(gameMode, random);
         for (var i = 0; i < 1000; i++)
         {
             if (game.PlayGame())
@@ -25,4 +25,4 @@ public class Simulator1000
         Console.WriteLine($"{gamesWon}% games won and {losses}% games lost");
     }
     
-}*/
+}

@@ -2,6 +2,7 @@ using MontyHallV2.DoorCreation;
 using MontyHallV2.GameModes;
 using MontyHallv2.GameShowStaff;
 using MontyHallV2.Interfaces;
+using MontyHallv2.Random;
 using Moq;
 
 namespace TestProject1.moq;
@@ -34,7 +35,8 @@ public class SimulatorTests
     public void GivenPlayerChooseDoorIsCalled_WhenSimulatorPlayerChoosesDoor_ThenADoorWillHaveBeenPicked()
     {
         //Arrange
-        var doors = GameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var gameMaster = new GameMaster(new RandomNum());
+        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
 
         //Act
         _simulator.PlayerChooseDoor(doors);

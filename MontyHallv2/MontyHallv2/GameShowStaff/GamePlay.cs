@@ -24,10 +24,11 @@ public class GamePlay
         // player/simulation choose a door
         _gameMode.PlayerChooseDoor(_doors);
         // host opens a door 
-        _host.HostOpensADoor(_doors);
+        var host = new Host();
+        host.HostOpensADoor(_doors);
         // player/simulation gets option to switch
         _gameMode.PlayerSwitchOrStayDoor(_doors);
         // game ending - player door contains a car or not
-        return _doors.First(door => door.HasPlayerPicked()).HasWonTheCarOrNot();
+        return _doors.First(door => door.HasPlayerPicked()).HasCar();
     }
 }

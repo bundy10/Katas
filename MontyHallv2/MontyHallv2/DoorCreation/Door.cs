@@ -30,11 +30,6 @@ public class Door
         _hasCar = true;
     }
 
-    public bool HasWonTheCarOrNot()
-    {
-        return _hasCar;
-    }
-
     public bool HasCar()
     {
         return _hasCar;

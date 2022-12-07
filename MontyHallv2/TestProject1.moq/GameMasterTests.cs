@@ -8,24 +8,45 @@ namespace TestProject1.moq;
 
 public class GameMasterTests
 {
-    
-    /*[Fact]
-    public void */
+    private readonly Mock<IRandom> _mockRandom;
+    private readonly GameMaster _gameMaster;
+    public GameMasterTests()
+    {
+        // Arrange
+        _mockRandom = new Mock<IRandom>();
+        _gameMaster = new GameMaster(_mockRandom.Object);
+    }
+
+    [Fact]
+    public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_ThenThreeDoorsShouldBeCreated()
+    {
+        //Arrange
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(1);
+        
+        
+        //Act
+        var doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        
+        
+        var numberOfDoors = doors.Count;
+        
+        
+        //Assert
+        Assert.Equal(3, numberOfDoors);
+    } 
     [Fact]
     public void GivenCreateDoorsAndInjectCarToRandomDoorIsCalled_WhenThreeDoorsAreCreated_ThenADoorShouldContainACar()
     {
         //Arrange
-        var mockRandom = new Mock<IRandom>();
-        var gameMaster = new GameMaster(mockRandom.Object);
-        mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
         
         
         //Act
-        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         
 
         var result = doors.FindAll(door => door.HasCar());
-        var results = result.Count();
+        var results = result.Count;
         
         
         //Assert
