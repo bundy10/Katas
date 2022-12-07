@@ -85,4 +85,27 @@ public class GamePlayTests
         //Assert
         Assert.True(isADoorOpened);
     }
+    
+    [Fact]
+    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsPickedByAPlayer_ThenReturnTrue()
+    {
+        //Arrange
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(doors => doors[2].PlayerPickedDoor());
+
+        Assert.True(_simGamePlay.PlayGame());
+    }
+    
+    [Fact]
+    public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenReturnFalse()
+    {
+        
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(doors => doors[1].PlayerPickedDoor());
+        
+        Assert.False(_simGamePlay.PlayGame());
+    }
+    
 }

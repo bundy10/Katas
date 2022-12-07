@@ -12,12 +12,14 @@ public class HostTests
     private List<Door> _doors;
     private readonly Host _host;
     private readonly GameMaster _gameMaster;
+    private readonly Mock<IRandom> _mockRandom;
 
     public HostTests()
     {
+        _mockRandom = new Mock<IRandom>();
         _doors = new List<Door>();
         _host = new Host();
-        _gameMaster = new GameMaster(new RandomNum());
+        _gameMaster = new GameMaster(_mockRandom.Object);
     }
     
     [Fact]
@@ -34,23 +36,18 @@ public class HostTests
         //Assert
         Assert.Equal(1, result);
     }
-
+    
     [Fact]
-    public void GivenHostGameOutcomeIsCalled_WhenTheDoorWithACarIsPickedByAPlayer_ThenReturnTrue()
+    public void GivenHostGameOutcomeIsCalled_WhenTheDoorThatContainsACarAndIsPickedByPlayer_ThenReturnTrue()
     {
         //Arrange
-        var mockGameMode = new Mock<IGameMode>();
-        var mockRandom = new Mock<IRandom>();
-        var cimGamePlay = new ConGamePlay(mockGameMode.Object, mockRandom.Object);
-        mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
-        mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
-            .Callback<List<Door>>(doors => doors[2].PlayerPickedDoor());
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        _doors[2].PlayerPickedDoor();
         
-        //Act
-        var winOrLoss = cimGamePlay.PlayGame();
-        
-        //Assert
-        Assert.True(winOrLoss);
+        Assert.True(_host.HostGameOutcome(_doors));
     }
     
+
+
 }
