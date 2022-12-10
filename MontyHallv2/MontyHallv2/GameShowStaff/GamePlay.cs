@@ -3,7 +3,7 @@ using MontyHallV2.Interfaces;
 
 namespace MontyHallv2.GameShowStaff;
 
-public class GamePlay : IGamePlay
+public class GamePlay
 {
     private readonly IGameMode _gameMode;
     private List<Door> _doors = new ();
@@ -19,15 +19,10 @@ public class GamePlay : IGamePlay
 
     public bool PlayGame()
     {
-        // create doors add prize to a door
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
-        // player/simulation choose a door
         _gameMode.PlayerChooseDoor(_doors);
-        // host opens a door 
         _host.HostOpensADoor(_doors);
-        // player/simulation gets option to switch
         _gameMode.PlayerSwitchOrStayDoor(_doors);
-        // game ending - player door contains a car or not
-        return _doors.First(door => door.HasPlayerPicked()).HasCar();
+        return _gameMode.GameOutComeWinOrLose(_doors);
     }
 }

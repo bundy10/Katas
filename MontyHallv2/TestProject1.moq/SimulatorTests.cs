@@ -10,12 +10,12 @@ namespace TestProject1.moq;
 public class SimulatorTests
 {
     private readonly Mock<IStrategy> _strategy;
-    private readonly Simulator _simulator;
+    private readonly SimulatorGame _simulatorGame;
 
     public SimulatorTests()
     {
         _strategy = new Mock<IStrategy>();
-        _simulator = new Simulator(_strategy.Object);
+        _simulatorGame = new SimulatorGame(_strategy.Object);
     }
 
     [Fact]
@@ -25,7 +25,7 @@ public class SimulatorTests
         _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(It.IsAny<List<Door>>())).Verifiable();
         
         //Act
-        _simulator.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>());
+        _simulatorGame.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>());
         
         //Assert
         _strategy.Verify();
@@ -43,7 +43,7 @@ public class SimulatorTests
         _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(doors))
             .Callback<List<Door>>(door => door[2].PlayerPickedDoor());
         
-        _simulator.PlayerSwitchOrStayDoor(doors);
+        _simulatorGame.PlayerSwitchOrStayDoor(doors);
         
         Assert.True(doors[2].HasPlayerPicked());
     }
@@ -56,7 +56,7 @@ public class SimulatorTests
         var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
 
         //Act
-        _simulator.PlayerChooseDoor(doors);
+        _simulatorGame.PlayerChooseDoor(doors);
         var result = doors.Any(door => door.HasPlayerPicked());
 
         //Assert

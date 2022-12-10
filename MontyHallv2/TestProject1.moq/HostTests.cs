@@ -64,7 +64,7 @@ public class HostTests
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         _doors[2].PlayerPickedDoor();
         
-        Assert.True(_host.HostGameOutcome(_doors));
+        Assert.True(_doors.First(door => door.HasPlayerPicked()).HasCar());
     }
     
     [Fact]
@@ -75,6 +75,6 @@ public class HostTests
         _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
         _doors[1].PlayerPickedDoor();
         
-        Assert.False(_host.HostGameOutcome(_doors));
+        Assert.False(_doors.First(door => door.HasPlayerPicked()).HasCar());
     }
 }

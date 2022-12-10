@@ -6,12 +6,12 @@ using MontyHallv2.Random;
 
 namespace MontyHallV2.GameModes;
 
-public class Simulator : IGameMode
+public class SimulatorGame : IGameMode
 {
     private readonly IStrategy _strategy;
     private readonly IRandom _random;
 
-    public Simulator(IStrategy strategy)
+    public SimulatorGame(IStrategy strategy)
     {
         _strategy = strategy;
         _random = new RandomNum();
@@ -25,5 +25,10 @@ public class Simulator : IGameMode
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
         _strategy.ToSwitchOrStay(doors);
+    }
+
+    public bool GameOutComeWinOrLose(List<Door> doors)
+    {
+        return doors.First(door => door.HasPlayerPicked()).HasCar();
     }
 }

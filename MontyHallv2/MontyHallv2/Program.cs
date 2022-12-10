@@ -13,9 +13,9 @@ namespace MontyHallv2
         public static void Main()
         {
             var game = new Simulator1000();
-            var consoleGame = new ConGamePlay(new ConsoleGame(), new RandomNum());
-            game.Simulate1000(new Simulator(new ToStay()), new RandomNum());
-            game.Simulate1000(new Simulator(new ToSwitch()), new RandomNum());
+            var consoleGame = new GamePlay(new ConsoleGame(), new RandomNum());
+            game.Simulate1000(new SimulatorGame(new ToStay()), new RandomNum());
+            game.Simulate1000(new SimulatorGame(new ToSwitch()), new RandomNum());
             consoleGame.PlayGame();
         }
     }
