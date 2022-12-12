@@ -27,7 +27,7 @@ public class SimulatorGame : IGameMode
         _strategy.ToSwitchOrStay(doors);
     }
 
-    public bool GameOutComeWinOrLose(List<Door> doors)
+    public bool GetGameOutCome(List<Door> doors)
     {
         return doors.First(door => door.HasPlayerPicked()).HasCar();
     }

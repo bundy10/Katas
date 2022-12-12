@@ -19,10 +19,10 @@ public class GamePlay
 
     public bool PlayGame()
     {
-        _doors = _gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        _doors = _gameMaster.GetDoorsIncludingCarDoors();
         _gameMode.PlayerChooseDoor(_doors);
-        _host.HostOpensADoor(_doors);
+        _host.HostOpensDoor(_doors);
         _gameMode.PlayerSwitchOrStayDoor(_doors);
-        return _gameMode.GameOutComeWinOrLose(_doors);
+        return _gameMode.GetGameOutCome(_doors);
     }
 }

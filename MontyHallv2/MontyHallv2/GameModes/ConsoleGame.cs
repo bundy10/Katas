@@ -30,7 +30,7 @@ public class ConsoleGame : IGameMode
         }
     }
 
-    public bool GameOutComeWinOrLose(List<Door> doors)
+    public bool GetGameOutCome(List<Door> doors)
     {
         return _dialog.HostGameOutcome(doors);
     }

@@ -7,5 +7,5 @@ public interface IGameMode
 {
     public void PlayerChooseDoor(List<Door> doors);
     public void PlayerSwitchOrStayDoor(List<Door> doors);
-    public bool GameOutComeWinOrLose(List<Door> doors);
+    public bool GetGameOutCome(List<Door> doors);
 }

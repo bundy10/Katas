@@ -1,7 +1,25 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/Bundy.Huang/Library/Caches/JetBrains/Rider2022.1/resharper-host/temp/Rider/vAny/CoverageData/_MontyHallv2.1907535/Snapshot/snapshot.utdcvr</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5fe0c6f8_002D3773_002D4852_002D9d71_002Db5eba3d2e7eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=16abbdb7_002D574b_002D4a63_002Db480_002D69c52b02ff7c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenPlayerHasLostTheCar" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E::net6.0::TestProject1.moq.GamePlayTests.GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenPlayerHasLostTheCar&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=22fc4b48_002Db5f1_002D4635_002D9079_002D7430705e49e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GamePlayTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Project Location="/Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq" Presentation="&amp;lt;TestProject1.moq&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5fe0c6f8_002D3773_002D4852_002D9d71_002Db5eba3d2e7eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq" Presentation="&amp;lt;TestProject1.moq&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=74f6c034_002D5382_002D4b2b_002Db0a8_002Dbe4ebe07307f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenPlayerHasLostTheCar #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E::net6.0::TestProject1.moq.GamePlayTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=90c96b12_002D0eb6_002D49f5_002Db4e0_002Da70715b9a8d9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GamePlayTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E::net6.0::TestProject1.moq.GamePlayTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f752bfb6_002D5150_002D4ac6_002D8f93_002De0284bd70878/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;TestProject1.moq&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Or&gt;

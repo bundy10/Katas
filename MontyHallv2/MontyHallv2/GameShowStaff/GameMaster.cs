@@ -14,7 +14,7 @@ public class GameMaster
         _random = random;
     }
     
-    public List<Door> CreateDoorsAndInjectCarToRandomDoor()
+    public List<Door> GetDoorsIncludingCarDoors()
     {
         var doors = Enumerable.Range(1, 3)
             .Select(_ => new Door())

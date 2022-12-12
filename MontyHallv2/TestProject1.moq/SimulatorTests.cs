@@ -36,7 +36,7 @@ public class SimulatorTests
         GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked()
     {
         var gameMaster = new GameMaster(new RandomNum());
-        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var doors = gameMaster.GetDoorsIncludingCarDoors();
         doors[0].PlayerPickedDoor();
         doors[1].PlayerPickedDoor();
         
@@ -53,7 +53,7 @@ public class SimulatorTests
     {
         //Arrange
         var gameMaster = new GameMaster(new RandomNum());
-        var doors = gameMaster.CreateDoorsAndInjectCarToRandomDoor();
+        var doors = gameMaster.GetDoorsIncludingCarDoors();
 
         //Act
         _simulatorGame.PlayerChooseDoor(doors);
