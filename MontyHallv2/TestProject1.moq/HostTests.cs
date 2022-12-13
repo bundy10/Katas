@@ -21,6 +21,22 @@ public class HostTests
         _host = new Host();
         _gameMaster = new GameMaster(_mockRandom.Object);
     }
+
+
+    [Fact]
+    public void GivenHostOpensADoorIsCalled_WhenDoorsAreGiven_ThenHostWillOpenDoors()
+    {
+        //Arrange
+        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        
+        //Act
+        _host.HostOpensDoor(_doors);
+        var openedDoor = _doors.Any(door => door.IsDoorOpened());
+        
+        //Assert
+        Assert.True(openedDoor);
+
+    }
     
     [Fact]
     public void GivenHostOpensADoorIsCalled_ThenHostOpensADoor()
@@ -30,11 +46,11 @@ public class HostTests
 
         //Act
         _host.HostOpensDoor(_doors);
-        var getResult = _doors.FindAll(door => door.IsDoorOpened());
-        var result = getResult.Count;
+        var doorsOpened = _doors.FindAll(door => door.IsDoorOpened());
+        var numOfDoorsOpened = doorsOpened.Count;
         
         //Assert
-        Assert.Equal(1, result);
+        Assert.Equal(1, numOfDoorsOpened);
     }
     
     [Fact]

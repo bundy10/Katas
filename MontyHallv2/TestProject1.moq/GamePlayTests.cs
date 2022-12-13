@@ -90,12 +90,17 @@ public class GamePlayTests
     public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsPickedByAPlayer_ThenPlayerHasWonTheCar()
     {
         //Arrange
-        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
-        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
-            .Callback<List<Door>>(doors => doors[2].PlayerPickedDoor());
+        var hasWon = false;
         
-        //Act
-        var hasWon = _gamePlay.PlayGame();
+        _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        
+        _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(door => door[2].PlayerPickedDoor());
+
+        _mockGameMode.Setup(gameMode => gameMode.GetGameOutCome(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(door => hasWon = door[2].HasCar() && door[2].HasPlayerPicked());
+        //act 
+        _gamePlay.PlayGame();
         
         //Assert
         Assert.True(hasWon);
@@ -105,12 +110,17 @@ public class GamePlayTests
     public void GivenPlayGameIsCalled_WhenTheDoorWithACarIsNotPickedByAPlayer_ThenPlayerHasLostTheCar()
     {
         //Arrange
+        var hasWon = false;
+        
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        
         _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[1].PlayerPickedDoor());
         
+        _mockGameMode.Setup(gameMode => gameMode.GetGameOutCome(It.IsAny<List<Door>>()))
+            .Callback<List<Door>>(door => hasWon = door.Any(winningDoors => winningDoors.HasCar() && winningDoors.HasPlayerPicked()));
         //Act
-        var hasWon = _gamePlay.PlayGame();
+        _gamePlay.PlayGame();
         
         //Assert
         Assert.False(hasWon);
