@@ -8,31 +8,28 @@ public static class Dialog
     {
         if (doors.First(door => door.HasPlayerPicked()).HasCar())
         {
-            Console.WriteLine("Congratulations you have won the car");
+            Console.WriteLine(ConstantDialogs.WinningCar);
             return true;
         }
-        Console.WriteLine("Sorry you have not won the car :(");
+        Console.WriteLine(ConstantDialogs.LosingCar);
         return false;
     }
     public static void InvalidDoorSelectionInputMessage()
     {
-        Console.WriteLine("Please enter a number from 1 to 3");
+        Console.WriteLine(ConstantDialogs.InvalidUserDoorSelectionInput);
     }
     public static void PromptPlayerToPickADoorMessage()
     {
-        Console.WriteLine("Please select a Door from 1 to 3");
+        Console.WriteLine(ConstantDialogs.PlayerSelectADoor);
     }
-    /*public void HostOpensADoorMessage()
-    {
-        Console.WriteLine("I will now open a Door");
-    }*/
+
     public static void PromptPlayerToStayOrSwitchDoor()
     {
-        Console.WriteLine("If you Would like to switch your door please enter 'y' or 'n' to stay");
+        Console.WriteLine(ConstantDialogs.ToSwitchOrstay);
     }
 
     public static void InvalidSwitchOrStayChoiceInputMessage()
     {
-        Console.WriteLine("Please enter y or n");
+        Console.WriteLine(ConstantDialogs.InvalidUserSwitchOrStay);
     }
 }
