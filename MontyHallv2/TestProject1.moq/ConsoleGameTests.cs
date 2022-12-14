@@ -2,6 +2,7 @@ using MontyHallv2.DoorCreation;
 using MontyHallv2.GameModes;
 using MontyHallv2.GameShowStaff;
 using MontyHallv2.Interfaces;
+using MontyHallv2.Messages;
 using MontyHallv2.Random;
 using Moq;
 
@@ -20,7 +21,7 @@ public class ConsoleGameTests
             .Select(_ => new Door())
             .ToList();
         
-        _doors[0].InjectCarToDoor();
+        _doors[CarDoor].InjectCarToDoor();
     }
 
     [Fact]
@@ -124,5 +125,20 @@ public class ConsoleGameTests
         //Assert
         Assert.True(onlyDoorAvailableToBePickedAfterSwitch);
     }
-
+    
+    [Fact]
+    public void GivenPLayerChooseDoorIsCalled_WhenUserDoorChoiceIsInvalid_ThenUserIsPromptedAnInvalidMessageToEnterAValidChoice()
+    {
+        //Arrange
+        var stringWriter = new StringWriter();
+        var stringReader = new StringReader("4\n2");
+        Console.SetIn(stringReader);
+        Console.SetOut(stringWriter);
+        
+        //Act
+        _consoleGame.PlayerChooseDoor(_doors);
+        
+        //Assert
+        Assert.Contains(ConstantDialogs.InvalidUserDoorSelectionInput, stringWriter.ToString());
+    }
 }

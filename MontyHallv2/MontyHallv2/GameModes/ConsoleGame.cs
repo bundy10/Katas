@@ -46,13 +46,13 @@ public class ConsoleGame : IGameMode
         return Dialog.HostGameOutcome(doors);
     }
     
-    private string? GetDoorSelectionFromUser()
+    public string? GetDoorSelectionFromUser()
     {
         Dialog.PromptPlayerToPickADoorMessage();
         return Console.ReadLine();
     }
     
-    private string? GetSwitchOrStayChoiceFromUser()
+    public string? GetSwitchOrStayChoiceFromUser()
     {
         Dialog.PromptPlayerToStayOrSwitchDoor();
         return Console.ReadLine();
