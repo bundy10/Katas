@@ -2,9 +2,9 @@ using MontyHallv2.DoorCreation;
 
 namespace MontyHallv2.Messages;
 
-public class Dialog
+public static class Dialog
 {
-    public bool HostGameOutcome(List<Door> doors)
+    public static bool HostGameOutcome(List<Door> doors)
     {
         if (doors.First(door => door.HasPlayerPicked()).HasCar())
         {
@@ -14,11 +14,11 @@ public class Dialog
         Console.WriteLine("Sorry you have not won the car :(");
         return false;
     }
-    /*public void WelcomeMessage()
+    public static void InvalidDoorSelectionInputMessage()
     {
-        Console.WriteLine("welcome to Monty Hall!");
-    }*/
-    public void PromptPlayerToPickADoorMessage()
+        Console.WriteLine("Please enter a number from 1 to 3");
+    }
+    public static void PromptPlayerToPickADoorMessage()
     {
         Console.WriteLine("Please select a Door from 1 to 3");
     }
@@ -26,8 +26,13 @@ public class Dialog
     {
         Console.WriteLine("I will now open a Door");
     }*/
-    public void PromptPlayerToStayOrSwitchDoor()
+    public static void PromptPlayerToStayOrSwitchDoor()
     {
-        Console.WriteLine("If you Would like to switch your door please enter y");
+        Console.WriteLine("If you Would like to switch your door please enter 'y' or 'n' to stay");
+    }
+
+    public static void InvalidSwitchOrStayChoiceInputMessage()
+    {
+        Console.WriteLine("Please enter y or n");
     }
 }

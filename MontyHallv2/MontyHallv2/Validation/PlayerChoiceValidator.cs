@@ -1,19 +1,16 @@
+using MontyHallv2.Messages;
+
 namespace MontyHallv2.Validation;
 
-public class PlayerChoiceValidator
+public static class PlayerChoiceValidator
 {
-    public bool CheckIfPlayerInputIsAnIntBetweenOneAndThree(string input)
+    public static bool ValidateUserDoorSelection(string? userDoorSelection)
     {
-        if (int.TryParse(input, out int result))
-        {
-            if (result > 3 || result < 0)
-            {
-                return false;
-            }
+        return int.TryParse(userDoorSelection, out var result) && result is >= 1 and <= 3;
+    }
 
-            return true;
-        }
-
-        return false;
+    public static bool ValidateUserSwitchOrStayChoice(string? userSwitchOrStayChoice)
+    {
+        return userSwitchOrStayChoice is "y" or "n";
     }
 }

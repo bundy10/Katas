@@ -4,27 +4,38 @@ using MontyHallv2.GameShowStaff;
 using MontyHallv2.Interfaces;
 using MontyHallv2.Messages;
 using MontyHallv2.Strategies;
+using MontyHallv2.Validation;
 
 namespace MontyHallv2.GameModes;
 
 public class ConsoleGame : IGameMode
 {
-    private readonly Dialog _dialog = new();
     private int _choice;
     public void PlayerChooseDoor(List<Door> doors)
     {
-        _dialog.PromptPlayerToPickADoorMessage();
-        var value = Console.ReadLine();
-        if (value != null) _choice = int.Parse(value) - 1;
+        var userDoorSelection = GetDoorSelectionFromUser();
+        while (!PlayerChoiceValidator.ValidateUserDoorSelection(userDoorSelection))
+        {
+            Dialog.InvalidDoorSelectionInputMessage();
+            userDoorSelection = GetDoorSelectionFromUser();
+        }
+        _choice = int.Parse(userDoorSelection) - 1;
         doors[_choice].PlayerPickedDoor();
     }
 
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
-        _dialog.PromptPlayerToStayOrSwitchDoor();
+        
         var strategy = new ToSwitch();
-        var value = Console.ReadLine();
-        if (value == "y")
+        var userSwitchOrStayChoice = GetSwitchOrStayChoiceFromUser();
+
+        while (!PlayerChoiceValidator.ValidateUserSwitchOrStayChoice(userSwitchOrStayChoice))
+        {
+            Dialog.InvalidSwitchOrStayChoiceInputMessage();
+            userSwitchOrStayChoice = GetSwitchOrStayChoiceFromUser();
+        }
+        
+        if (userSwitchOrStayChoice == "y")
         {
             strategy.ToSwitchOrStay(doors);
         }
@@ -32,6 +43,18 @@ public class ConsoleGame : IGameMode
 
     public bool GetGameOutCome(List<Door> doors)
     {
-        return _dialog.HostGameOutcome(doors);
+        return Dialog.HostGameOutcome(doors);
+    }
+    
+    private string? GetDoorSelectionFromUser()
+    {
+        Dialog.PromptPlayerToPickADoorMessage();
+        return Console.ReadLine();
+    }
+    
+    private string? GetSwitchOrStayChoiceFromUser()
+    {
+        Dialog.PromptPlayerToStayOrSwitchDoor();
+        return Console.ReadLine();
     }
 }
