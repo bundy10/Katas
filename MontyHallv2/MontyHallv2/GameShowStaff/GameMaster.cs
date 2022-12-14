@@ -1,5 +1,5 @@
-using MontyHallV2.DoorCreation;
-using MontyHallV2.Interfaces;
+using MontyHallv2.DoorCreation;
+using MontyHallv2.Interfaces;
 
 namespace MontyHallv2.GameShowStaff;
 

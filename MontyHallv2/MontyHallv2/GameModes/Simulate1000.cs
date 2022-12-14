@@ -1,7 +1,7 @@
 using MontyHallv2.GameShowStaff;
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 
-namespace MontyHallV2.GameModes;
+namespace MontyHallv2.GameModes;
 
 public class Simulator1000
 {

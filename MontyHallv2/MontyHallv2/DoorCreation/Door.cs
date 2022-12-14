@@ -1,4 +1,4 @@
-namespace MontyHallV2.DoorCreation;
+namespace MontyHallv2.DoorCreation;
 
 public class Door
 {

@@ -1,7 +1,7 @@
-using MontyHallV2.DoorCreation;
+using MontyHallv2.DoorCreation;
 using MontyHallv2.Messages;
 
-namespace MontyHallV2.Interfaces;
+namespace MontyHallv2.Interfaces;
 
 public interface IGameMode
 {

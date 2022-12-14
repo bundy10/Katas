@@ -1,4 +1,4 @@
-namespace MontyHallV2.Interfaces;
+namespace MontyHallv2.Interfaces;
 
 public interface IRandom
 {

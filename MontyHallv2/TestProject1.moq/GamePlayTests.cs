@@ -1,8 +1,8 @@
 using System.Xml.Serialization;
-using MontyHallV2.DoorCreation;
-using MontyHallV2.GameModes;
+using MontyHallv2.DoorCreation;
+using MontyHallv2.GameModes;
 using MontyHallv2.GameShowStaff;
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 using MontyHallv2.Strategies;
 using Moq;
 

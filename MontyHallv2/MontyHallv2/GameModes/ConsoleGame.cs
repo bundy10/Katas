@@ -1,11 +1,11 @@
 
-using MontyHallV2.DoorCreation;
+using MontyHallv2.DoorCreation;
 using MontyHallv2.GameShowStaff;
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 using MontyHallv2.Messages;
 using MontyHallv2.Strategies;
 
-namespace MontyHallV2.GameModes;
+namespace MontyHallv2.GameModes;
 
 public class ConsoleGame : IGameMode
 {

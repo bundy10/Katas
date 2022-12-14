@@ -1,4 +1,4 @@
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 
 namespace MontyHallv2.Random
 {

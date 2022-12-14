@@ -1,20 +1,20 @@
 
-using MontyHallV2.DoorCreation;
+using MontyHallv2.DoorCreation;
 using MontyHallv2.GameShowStaff;
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 using MontyHallv2.Random;
 
-namespace MontyHallV2.GameModes;
+namespace MontyHallv2.GameModes;
 
 public class SimulatorGame : IGameMode
 {
     private readonly IStrategy _strategy;
     private readonly IRandom _random;
 
-    public SimulatorGame(IStrategy strategy)
+    public SimulatorGame(IStrategy strategy, IRandom randomNum)
     {
         _strategy = strategy;
-        _random = new RandomNum();
+        _random = randomNum;
     }
 
     public void PlayerChooseDoor(List<Door> doors)

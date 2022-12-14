@@ -1,7 +1,7 @@
 using System.Resources;
-using MontyHallV2.DoorCreation;
+using MontyHallv2.DoorCreation;
 using MontyHallv2.GameShowStaff;
-using MontyHallV2.Interfaces;
+using MontyHallv2.Interfaces;
 using MontyHallv2.Random;
 using Moq;
 
