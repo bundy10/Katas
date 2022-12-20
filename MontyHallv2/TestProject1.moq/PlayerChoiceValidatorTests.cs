@@ -6,7 +6,6 @@ namespace TestProject1.moq;
 
 public class PlayerChoiceValidatorTests
 {
-    private readonly List<Door> _doors;
     private readonly ConsoleGame _consoleGame = new();
 
     [Fact]

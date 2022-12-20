@@ -13,7 +13,8 @@ public class Simulator1000
         var game = new GamePlay(gameMode, random);
         for (var i = 0; i < 1000; i++)
         {
-            if (game.PlayGame())
+            game.PlayGame();
+            if (game.GetOutComeOfGame())
             {
                 _gamesWon++;
             }

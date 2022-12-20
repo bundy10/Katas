@@ -6,13 +6,14 @@ public static class Dialog
 {
     public static bool HostGameOutcome(List<Door> doors)
     {
-        if (doors.First(door => door.HasPlayerPicked()).HasCar())
+        if (!doors.First(door => door.HasPlayerPicked()).HasCar())
         {
-            Console.WriteLine(ConstantDialogs.WinningCar);
-            return true;
+            Console.WriteLine(ConstantDialogs.LosingCar);
+            return false;
         }
-        Console.WriteLine(ConstantDialogs.LosingCar);
-        return false;
+
+        Console.WriteLine(ConstantDialogs.WinningCar);
+        return true;
     }
     public static void InvalidDoorSelectionInputMessage()
     {
@@ -25,7 +26,7 @@ public static class Dialog
 
     public static void PromptPlayerToStayOrSwitchDoor()
     {
-        Console.WriteLine(ConstantDialogs.ToSwitchOrstay);
+        Console.WriteLine(ConstantDialogs.ToSwitchOrStay);
     }
 
     public static void InvalidSwitchOrStayChoiceInputMessage()

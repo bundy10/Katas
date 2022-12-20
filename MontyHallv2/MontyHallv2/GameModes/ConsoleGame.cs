@@ -10,32 +10,35 @@ namespace MontyHallv2.GameModes;
 
 public class ConsoleGame : IGameMode
 {
-    private int _choice;
+    private int _playerChoice;
+    private string? _playerSelection;
+    
     public void PlayerChooseDoor(List<Door> doors)
     {
-        var userDoorSelection = GetDoorSelectionFromUser();
-        while (!PlayerChoiceValidator.ValidateUserDoorSelection(userDoorSelection))
+        _playerSelection = GetDoorSelectionFromUser();
+        while (!PlayerChoiceValidator.ValidateUserDoorSelection(_playerSelection))
         {
             Dialog.InvalidDoorSelectionInputMessage();
-            userDoorSelection = GetDoorSelectionFromUser();
+            _playerSelection = GetDoorSelectionFromUser();
         }
-        _choice = int.Parse(userDoorSelection) - 1;
-        doors[_choice].PlayerPickedDoor();
+
+        if (_playerSelection != null) _playerChoice = int.Parse(_playerSelection) - 1;
+        doors[_playerChoice].PlayerPickedDoor();
     }
 
     public void PlayerSwitchOrStayDoor(List<Door> doors)
     {
         
         var strategy = new ToSwitch();
-        var userSwitchOrStayChoice = GetSwitchOrStayChoiceFromUser();
+        _playerSelection = GetSwitchOrStayChoiceFromUser();
 
-        while (!PlayerChoiceValidator.ValidateUserSwitchOrStayChoice(userSwitchOrStayChoice))
+        while (!PlayerChoiceValidator.ValidateUserSwitchOrStayChoice(_playerSelection))
         {
             Dialog.InvalidSwitchOrStayChoiceInputMessage();
-            userSwitchOrStayChoice = GetSwitchOrStayChoiceFromUser();
+            _playerSelection = GetSwitchOrStayChoiceFromUser();
         }
         
-        if (userSwitchOrStayChoice == "y")
+        if (_playerSelection == "y")
         {
             strategy.ToSwitchOrStay(doors);
         }

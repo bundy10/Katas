@@ -141,4 +141,21 @@ public class ConsoleGameTests
         //Assert
         Assert.Contains(ConstantDialogs.InvalidUserDoorSelectionInput, stringWriter.ToString());
     }
+    
+    [Fact]
+    public void GivenPLayerToSwitchOrStayIsCalled_WhenUserChoiceIsInvalid_ThenUserIsPromptedAnInvalidMessageToEnterAValidChoice()
+    {
+        //Arrange
+        var stringWriter = new StringWriter();
+        var stringReader = new StringReader("2\nc\ny");
+        Console.SetIn(stringReader);
+        Console.SetOut(stringWriter);
+        
+        //Act
+        _consoleGame.PlayerChooseDoor(_doors);
+        _consoleGame.PlayerSwitchOrStayDoor(_doors);
+        
+        //Assert
+        Assert.Contains(ConstantDialogs.InvalidUserSwitchOrStay, stringWriter.ToString());
+    }
 }

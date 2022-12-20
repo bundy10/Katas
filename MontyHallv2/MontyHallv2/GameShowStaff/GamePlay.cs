@@ -18,12 +18,18 @@ public class GamePlay
     }
     
 
-    public bool PlayGame()
+    public void PlayGame()
     {
         _doors = _gameMaster.GetDoorsIncludingCarDoors();
         _gameMode.PlayerChooseDoor(_doors);
         _host.HostOpensDoor(_doors);
         _gameMode.PlayerSwitchOrStayDoor(_doors);
+        GetOutComeOfGame();
+    }
+
+    public bool GetOutComeOfGame()
+    {
         return _gameMode.GetGameOutCome(_doors);
     }
+    
 }
