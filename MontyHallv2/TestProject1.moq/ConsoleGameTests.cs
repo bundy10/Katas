@@ -28,7 +28,8 @@ public class ConsoleGameTests
     public void GivenPlayerChooseDoorIsCalled_WhenUserIsPromptedToOpenADoor_ThenADoorWillBePicked()
     {
         //Arrange
-        var stringReader = new StringReader("1");
+        var doorToPick = "1";
+        var stringReader = new StringReader(doorToPick);
         Console.SetIn(stringReader);
         const int expectedExactlyOneDoorToBePicked = 1;
         
@@ -44,8 +45,8 @@ public class ConsoleGameTests
     public void GivenPlayerSwitchOrStayDoorIsCalled_WhenADoorIsAlreadyPicked_ThenThatDoorWillBeUnpicked()
     {
         //Arrange
-        const string inputDoorToPickAndYesToSwitch = "1\ny";
-        var stringReader = new StringReader(inputDoorToPickAndYesToSwitch);
+        const string doorToPickAndYesToSwitch = "1\ny";
+        var stringReader = new StringReader(doorToPickAndYesToSwitch);
         Console.SetIn(stringReader);
 
         //Act
@@ -61,8 +62,8 @@ public class ConsoleGameTests
     public void GivenPlayerSwitchOrStayDoorIsCalled_WhenADoorIsAlreadyPicked_ThenOneOfTheOtherDoorsWillBePicked()
     {
         //Arrange
-        const string inputDoorToPickAndYesToSwitch = "1\ny";
-        var stringReader = new StringReader(inputDoorToPickAndYesToSwitch);
+        const string doorToPickAndYesToSwitch = "1\ny";
+        var stringReader = new StringReader(doorToPickAndYesToSwitch);
         Console.SetIn(stringReader);
 
         //Act
@@ -78,8 +79,8 @@ public class ConsoleGameTests
     public void GivenGetGameOutComeIsCalled_WhenAPlayerHasPickedTheCarDoorAndHasOptedNotToSwitch_ThenThePlayerHasWonTheCar()
     {
         //Arrange
-        const string inputDoorToPickAndNoToSwitch = "1\nn";
-        var stringReader = new StringReader(inputDoorToPickAndNoToSwitch);
+        const string doorToPickAndNoToSwitch = "1\nn";
+        var stringReader = new StringReader(doorToPickAndNoToSwitch);
         Console.SetIn(stringReader);
 
         //Act
@@ -95,8 +96,8 @@ public class ConsoleGameTests
     public void GivenGetGameOutComeIsCalled_WhenAPlayerHasPickedTheCarDoorAndHasOptedToSwitch_ThenThePlayerHasNotWonTheCar()
     {
         //Arrange
-        const string inputDoorToPickAndNoToSwitch = "1\ny";
-        var stringReader = new StringReader(inputDoorToPickAndNoToSwitch);
+        const string doorToPickAndYesToSwitch = "1\ny";
+        var stringReader = new StringReader(doorToPickAndYesToSwitch);
         Console.SetIn(stringReader);
 
         //Act
@@ -112,8 +113,8 @@ public class ConsoleGameTests
     public void GivenADoorIsOpened_WhenAPlayerHasPickedTheCarDoorAndHasOptedToSwitch_ThenThePlayerCannotSwitchToTheOpenedDoor()
     {
         //Arrange
-        const string inputDoorToPickAndNoToSwitch = "1\ny";
-        var stringReader = new StringReader(inputDoorToPickAndNoToSwitch);
+        const string doorToPickAndYesToSwitch = "1\ny";
+        var stringReader = new StringReader(doorToPickAndYesToSwitch);
         Console.SetIn(stringReader);
         _doors[1].OpeningDoor();
 

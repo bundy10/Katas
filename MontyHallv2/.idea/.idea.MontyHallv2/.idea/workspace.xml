@@ -9,20 +9,10 @@
   <component name="ChangeListManager">
     <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/ConsoleGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameModes/Simulate1000.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/GameShowStaff/GamePlay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Messages/ConstantDialogs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Messages/ConstantDialogs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Messages/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Messages/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/Validation/PlayerChoiceValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/Validation/PlayerChoiceValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/ConsoleGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/ConsoleGameTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestProject1.moq/PlayerChoiceValidatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/PlayerChoiceValidatorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulatorGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject1.moq/SimulatorGameTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +129,12 @@
       <workItem from="1670369546236" duration="18427000" />
       <workItem from="1670547290769" duration="5079000" />
       <workItem from="1670842923203" duration="644000" />
-      <workItem from="1671508032479" duration="4230000" />
+      <workItem from="1671508032479" duration="6183000" />
+      <workItem from="1671580457729" duration="29000" />
+      <workItem from="1671592056290" duration="49000" />
+      <workItem from="1671592110035" duration="9000" />
+      <workItem from="1671592446799" duration="1904000" />
+      <workItem from="1671594372390" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -288,74 +283,55 @@
       <option name="project" value="LOCAL" />
       <updated>1670660273177</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="refactored code and added 1 more test">
+      <created>1671576131466</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1671576131466</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="41" />
+    <option name="coveragePercentColumnWidth" value="27" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="2" />
-    <option name="symbolColumnWidth" value="208" />
+    <option name="symbolColumnWidth" value="132" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 94% 26/424" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TestProject1.moq 100% 0/249" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 94% 26/424" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TestProject1.moq 100% 0/249" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="TestProject1.moq 100% 0/249" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 94% 26/424" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 94% 26/424" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 75% 17/67" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GameModes 100% 0/50" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GameModes 100% 0/50" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="ConsoleGame 100% 0/35" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Validation 100% 0/2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 100% 0/386" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/137" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Validation 100% 0/2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="PlayerChoiceValidator 100% 0/2" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 94% 26/424" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="MontyHallv2 84% 26/161" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="GameModes 75% 17/67" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Simulator1000 0% 17/17" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -397,6 +373,7 @@
     <MESSAGE value="Added a gameplay test and host test" />
     <MESSAGE value="got rid of two unneeded classes and tests" />
     <MESSAGE value="removed gameplay interface and congameplay. added a dialog class which is implemented by the consolegame" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed gameplay interface and congameplay. added a dialog class which is implemented by the consolegame" />
+    <MESSAGE value="refactored code and added 1 more test" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored code and added 1 more test" />
   </component>
 </project>

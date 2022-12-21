@@ -10,76 +10,77 @@ namespace TestProject1.moq;
 
 public class SimulatorTests
 {
-    private readonly Mock<IStrategy> _strategy;
+    private readonly Mock<IStrategy> _mockStrategy;
     private SimulatorGame _simulatorGame;
-    private Mock<IRandom> _randomNum;
+    private readonly Mock<IRandom> _mockRandomNum;
+    private readonly List<Door> _doors;
+    private const int CarDoor = 0;
 
     public SimulatorTests()
     {
-        _strategy = new Mock<IStrategy>();
-        _randomNum = new Mock<IRandom>();
-        _simulatorGame = new SimulatorGame(_strategy.Object, _randomNum.Object);
+        _mockStrategy = new Mock<IStrategy>();
+        _mockRandomNum = new Mock<IRandom>();
+        _simulatorGame = new SimulatorGame(_mockStrategy.Object, _mockRandomNum.Object);
+
+        _doors = Enumerable.Range(1, 3)
+            .Select(_ => new Door())
+            .ToList();
+        
+        _doors[CarDoor].InjectCarToDoor();
+    }
+    
+    [Fact]
+    public void GivenPlayerChooseDoorIsCalled_WhenSimulatorPlayerChoosesDoor_ThenADoorWillHaveBeenPicked()
+    {
+        
+        //Act
+        _simulatorGame.PlayerChooseDoor(_doors);
+        var isADoorPicked = _doors.Any(door => door.HasPlayerPicked());
+
+        //Assert
+        Assert.True(isADoorPicked);
+
     }
 
     [Fact]
     public void GivenPlayerSwitchOrStayDoorIsCalled_ThenSimulationPlayerShouldBePromptedToSwitchOrStayAtADoor()
     {
         //Arrange
-        _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(It.IsAny<List<Door>>())).Verifiable();
+        _mockStrategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(It.IsAny<List<Door>>())).Verifiable();
         
         //Act
         _simulatorGame.PlayerSwitchOrStayDoor(It.IsAny<List<Door>>());
         
         //Assert
-        _strategy.Verify();
+        _mockStrategy.Verify();
     }
     
     [Fact]
     public void
         GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked()
     {
-        var gameMaster = new GameMaster(new RandomNum());
-        var doors = gameMaster.GetDoorsIncludingCarDoors();
-        doors[0].PlayerPickedDoor();
-        doors[1].PlayerPickedDoor();
+        _doors[0].PlayerPickedDoor();
+        _doors[1].PlayerPickedDoor();
         
-        _strategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(doors))
+        _mockStrategy.Setup(simPlayer => simPlayer.ToSwitchOrStay(_doors))
             .Callback<List<Door>>(door => door[2].PlayerPickedDoor());
         
-        _simulatorGame.PlayerSwitchOrStayDoor(doors);
+        _simulatorGame.PlayerSwitchOrStayDoor(_doors);
         
-        Assert.True(doors[2].HasPlayerPicked());
+        Assert.True(_doors[2].HasPlayerPicked());
     }
 
-    [Fact]
-    public void GivenPlayerChooseDoorIsCalled_WhenSimulatorPlayerChoosesDoor_ThenADoorWillHaveBeenPicked()
-    {
-        //Arrange
-        var gameMaster = new GameMaster(new RandomNum());
-        var doors = gameMaster.GetDoorsIncludingCarDoors();
-
-        //Act
-        _simulatorGame.PlayerChooseDoor(doors);
-        var result = doors.Any(door => door.HasPlayerPicked());
-
-        //Assert
-        Assert.True(result);
-
-    }
-    
     [Fact]
     public void GivenToSwitchOrStayIsCalled_WhenPlayerOptsToStay_ThenTheOriginalDoorPickedWillStayPicked()
     {
         //Arrange
-        var gameMaster = new GameMaster(new RandomNum());
-        var doors = gameMaster.GetDoorsIncludingCarDoors();
-        _randomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(0);
-        _simulatorGame = new SimulatorGame(new ToStay(), _randomNum.Object);
+        _mockRandomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(0);
+        _simulatorGame = new SimulatorGame(new ToStay(), _mockRandomNum.Object);
         
         //Act
-        _simulatorGame.PlayerChooseDoor(doors);
-        _simulatorGame.PlayerSwitchOrStayDoor(doors);
-        var isOriginalDoorStillPicked = doors[0].HasPlayerPicked();
+        _simulatorGame.PlayerChooseDoor(_doors);
+        _simulatorGame.PlayerSwitchOrStayDoor(_doors);
+        var isOriginalDoorStillPicked = _doors[0].HasPlayerPicked();
 
         //Assert
         Assert.True(isOriginalDoorStillPicked);
@@ -90,15 +91,13 @@ public class SimulatorTests
     public void GivenGetGameOutComeIsCalled_WhenPlayerChoosesTheCarDoorAndOptsToStay_ThenPlayerWillWinTheCar()
     {
         //Arrange
-        _randomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(0);
-        var gameMaster = new GameMaster(_randomNum.Object);
-        _simulatorGame = new SimulatorGame(new ToStay(), _randomNum.Object);
-        var doors = gameMaster.GetDoorsIncludingCarDoors();
-        
+        _mockRandomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(0);
+        _simulatorGame = new SimulatorGame(new ToStay(), _mockRandomNum.Object);
+
         //Act
-        _simulatorGame.PlayerChooseDoor(doors);
-        _simulatorGame.PlayerSwitchOrStayDoor(doors);
-        var hasWon = _simulatorGame.GetGameOutCome(doors);
+        _simulatorGame.PlayerChooseDoor(_doors);
+        _simulatorGame.PlayerSwitchOrStayDoor(_doors);
+        var hasWon = _simulatorGame.GetGameOutCome(_doors);
 
         //Assert
         Assert.True(hasWon);
