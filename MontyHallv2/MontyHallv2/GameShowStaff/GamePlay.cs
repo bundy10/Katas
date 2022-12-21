@@ -20,7 +20,7 @@ public class GamePlay
 
     public void PlayGame()
     {
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
         _gameMode.PlayerChooseDoor(_doors);
         _host.HostOpensDoor(_doors);
         _gameMode.PlayerSwitchOrStayDoor(_doors);

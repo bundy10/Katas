@@ -27,7 +27,7 @@ public class HostTests
     public void GivenHostOpensADoorIsCalled_WhenDoorsAreGiven_ThenHostWillOpenDoors()
     {
         //Arrange
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
         
         //Act
         _host.HostOpensDoor(_doors);
@@ -42,7 +42,7 @@ public class HostTests
     public void GivenHostOpensADoorIsCalled_ThenHostOpensADoor()
     {
         //Arrange
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
 
         //Act
         _host.HostOpensDoor(_doors);
@@ -62,7 +62,7 @@ public class HostTests
         const int expectedDoorToBeOpened = 0;
         
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(carDoor);
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
         
         //Act
         _doors[playerPickedDoor].PlayerPickedDoor();
@@ -77,7 +77,7 @@ public class HostTests
     {
         //Arrange
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
         _doors[2].PlayerPickedDoor();
         
         Assert.True(_doors.First(door => door.HasPlayerPicked()).HasCar());
@@ -88,7 +88,7 @@ public class HostTests
     {
         //Arrange
         _mockRandom.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
-        _doors = _gameMaster.GetDoorsIncludingCarDoors();
+        _doors = _gameMaster.GetDoorsIncludingCarDoor();
         _doors[1].PlayerPickedDoor();
         
         Assert.False(_doors.First(door => door.HasPlayerPicked()).HasCar());

@@ -43,12 +43,9 @@ public class ConsoleGame : IGameMode
             strategy.ToSwitchOrStay(doors);
         }
     }
-
-    public bool GetGameOutCome(List<Door> doors)
-    {
-        return Dialog.HostGameOutcome(doors);
-    }
     
+    public bool GetGameOutCome(List<Door> doors) => Dialog.HostGameOutcome(doors);
+
     public string? GetDoorSelectionFromUser()
     {
         Dialog.PromptPlayerToPickADoorMessage();

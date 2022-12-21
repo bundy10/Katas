@@ -25,27 +25,16 @@ public class GamePlayTests
     [Fact]
     public void GivenPlayGameIsCalled_WhenThreeDoorObjectsAreCreated_ThenPlayerPromptedToChooseADoor()
     {
-        // Arrange
-        // create a new gamePlay object
-        // create a new gameMode
-        // give strategies to gameMode
-        // var strategy = new ToStay();
-        // var gameMode = new Simulator(strategy);
-
+        //Arrange
         _mockGameMode.Setup(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()))
             .Callback<List<Door>>(doors => doors[0].PlayerPickedDoor())
             .Verifiable();
-        // .Return to expect a return from the function
-
-        // Act
-        // Call PlayGame on the gamePlay object
+        
+        //Act
         _gamePlay.PlayGame();
-
-        // Assert
-        // We check if one of the three door objects has a PlayerPicked
-        // check if player chooses a door
+        
+        //Assert
         _mockGameMode.Verify();
-        //mockGameMode.Verify(gameMode => gameMode.PlayerChooseDoor(It.IsAny<List<Door>>()), Times.Once);
     }
 
 
@@ -125,5 +114,4 @@ public class GamePlayTests
         //Assert
         Assert.False(hasWon);
     }
-    
 }

@@ -26,7 +26,7 @@ public class GameMasterTests
         
         
         //Act
-        var doors = _gameMaster.GetDoorsIncludingCarDoors();
+        var doors = _gameMaster.GetDoorsIncludingCarDoor();
         
         
         var actualNumberOfDoors = doors.Count;
@@ -44,7 +44,7 @@ public class GameMasterTests
         
         
         //Act
-        var doors = _gameMaster.GetDoorsIncludingCarDoors();
+        var doors = _gameMaster.GetDoorsIncludingCarDoor();
         var listOfDoorsWithACar = doors.FindAll(door => door.HasCar());
         var actualNumberOfDoorsWithCar = listOfDoorsWithACar.Count;
         
