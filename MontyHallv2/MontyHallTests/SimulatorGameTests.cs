@@ -75,7 +75,9 @@ public class SimulatorTests
     {
         //Arrange
         _mockRandomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(0);
+        
         _simulatorGame = new SimulatorGame(new ToStay(), _mockRandomNum.Object);
+        
         
         //Act
         _simulatorGame.PlayerChooseDoor(_doors);
@@ -96,6 +98,25 @@ public class SimulatorTests
 
         //Act
         _simulatorGame.PlayerChooseDoor(_doors);
+        _doors[1].OpeningDoor();
+        _simulatorGame.PlayerSwitchOrStayDoor(_doors);
+        var hasWon = _simulatorGame.GetGameOutCome(_doors);
+
+        //Assert
+        Assert.True(hasWon);
+
+    }
+    
+    [Fact]
+    public void GivenGetGameOutComeIsCalled_WhenPlayerChoosesANonCarDoorAndOptsToSwitch_ThenPlayerWillWinTheCar()
+    {
+        //Arrange
+        _mockRandomNum.Setup(num => num.GetNumberBetweenRange(It.IsAny<int>(), It.IsAny<int>())).Returns(2);
+        _simulatorGame = new SimulatorGame(new ToSwitch(), _mockRandomNum.Object);
+
+        //Act
+        _simulatorGame.PlayerChooseDoor(_doors);
+        _doors[1].OpeningDoor();
         _simulatorGame.PlayerSwitchOrStayDoor(_doors);
         var hasWon = _simulatorGame.GetGameOutCome(_doors);
 

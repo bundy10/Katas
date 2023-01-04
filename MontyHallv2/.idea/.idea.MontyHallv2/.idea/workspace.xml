@@ -7,23 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="Refactored: changed some variable names to reveal more intent and made some functions smaller">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="final commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/bin/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/MontyHallv2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/ref/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2/obj/Debug/net6.0/refint/MontyHallv2.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/ConsoleGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/ConsoleGameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/GameMasterTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/GameMasterTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/GamePlayTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/GamePlayTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/HostTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/HostTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/PlayerChoiceValidatorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/PlayerChoiceValidatorTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/SimulatorGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/TestProject1.moq.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/MontyHallTests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject1.moq/Usings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/Usings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +54,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Static Method.MontyHallv2.Program.Main">
     <configuration name="MontyHallv2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -156,7 +145,7 @@
       <workItem from="1671592056290" duration="49000" />
       <workItem from="1671592110035" duration="9000" />
       <workItem from="1671592446799" duration="1904000" />
-      <workItem from="1671594372390" duration="4721000" />
+      <workItem from="1671594372390" duration="7822000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -326,17 +315,24 @@
       <option name="project" value="LOCAL" />
       <updated>1671598385783</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="final commit">
+      <created>1672817438569</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1672817438569</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="27" />
+    <option name="coveragePercentColumnWidth" value="20" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="2" />
-    <option name="symbolColumnWidth" value="150" />
+    <option name="symbolColumnWidth" value="62" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -397,6 +393,7 @@
     <MESSAGE value="refactored code and added 1 more test" />
     <MESSAGE value="added happy test for validator" />
     <MESSAGE value="Refactored: changed some variable names to reveal more intent and made some functions smaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored: changed some variable names to reveal more intent and made some functions smaller" />
+    <MESSAGE value="final commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
   </component>
 </project>
