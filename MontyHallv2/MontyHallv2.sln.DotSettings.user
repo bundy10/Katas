@@ -22,7 +22,7 @@
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f0469ca7_002D3298_002D46a9_002D9ceb_002D10e26c9bd8f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq" Presentation="&amp;lt;TestProject1.moq&amp;gt;" /&gt;
+  &lt;Project Location="/Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallTests" Presentation="&amp;lt;MontyHallTests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f191b921_002Db512_002D4912_002Daf0b_002Dff6f5b4c0319/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GivenPlayerSwitchOrStayDoorIsCalled_WhenTwoDoorsAreEitherPickedAlreadyOrOpened_ThenTheLatterDoorWillBePicked" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;

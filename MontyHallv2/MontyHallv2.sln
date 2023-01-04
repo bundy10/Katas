@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallv2", "MontyHallv2\MontyHallv2.csproj", "{97048D3C-7C48-4D82-8E1A-BC2D8C04EDBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1.moq", "TestProject1.moq\TestProject1.moq.csproj", "{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallTests", "MontyHallTests\MontyHallTests.csproj", "{7FEA9DD0-6870-441F-9965-9A7EC6A5BA2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
