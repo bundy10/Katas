@@ -7,10 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="final commit">
+    <list default="true" id="09cc6f8f-21bb-45ce-8cc7-6ecd5be7bc64" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MontyHallv2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/MontyHallv2.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +31,6 @@
     <setting file="file://$PROJECT_DIR$/MontyHallTests/HostTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MontyHallTests/PlayerChoiceValidatorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MontyHallTests/SimulatorGameTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/GameModes/ConsoleGame.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/MontyHallv2/GameShowStaff/GamePlay.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/ConsoleGameTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/GameMasterTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/GamePlayTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/HostTests.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Bundy.Huang/Desktop/Katas/MontyHallv2/TestProject1.moq/PlayerChoiceValidatorTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377b61b613ea444f826f377d9474ffca3c9a8/b5/3e1114a1/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517f607c12a4b508364c3f896f0fe6f11da8/ba/f39202d0/Assert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ff32d9e6a8ae52479379f35545f9a152fde5adb58a20dc4526c1c59bafe3/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -54,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Static Method.MontyHallv2.Program.Main">
     <configuration name="MontyHallv2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -145,7 +136,8 @@
       <workItem from="1671592056290" duration="49000" />
       <workItem from="1671592110035" duration="9000" />
       <workItem from="1671592446799" duration="1904000" />
-      <workItem from="1671594372390" duration="7822000" />
+      <workItem from="1671594372390" duration="15696000" />
+      <workItem from="1673396441219" duration="6836000" />
     </task>
     <task id="LOCAL-00001" summary="Add gitignore">
       <created>1668470853117</created>
@@ -322,35 +314,26 @@
       <option name="project" value="LOCAL" />
       <updated>1672817438569</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added one more test to test toswitch method">
+      <created>1672820524119</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672820524119</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnitTestsCoverage.Settings">
-    <option name="coveragePercentColumnWidth" value="20" />
+    <option name="coveragePercentColumnWidth" value="15" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="2" />
-    <option name="symbolColumnWidth" value="62" />
+    <option name="symbolColumnWidth" value="15" />
     <coverage-tree-state>
-      <expand>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 34% 263/399" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 34% 263/399" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/136" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 34% 263/399" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/136" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MontyHallv2 100% 0/136" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </coverage-tree-state>
   </component>
@@ -369,7 +352,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add gitignore" />
     <MESSAGE value="Refactored" />
     <MESSAGE value="refactored gameplay class" />
     <MESSAGE value="First GamePlayTest" />
@@ -394,6 +376,7 @@
     <MESSAGE value="added happy test for validator" />
     <MESSAGE value="Refactored: changed some variable names to reveal more intent and made some functions smaller" />
     <MESSAGE value="final commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="final commit" />
+    <MESSAGE value="added one more test to test toswitch method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added one more test to test toswitch method" />
   </component>
 </project>
