@@ -4,13 +4,18 @@ namespace MontyHall.Strategies;
 
 public class SwitchPlayer : IPlayer
 {
+    private Random _rand = new Random();
+    private int _playerDoorChoice;
+
     public int SwitchDoor(List<int> doors)
     {
-        throw new NotImplementedException();
+        _playerDoorChoice = _rand.Next(doors.Count);
+        return _playerDoorChoice;
     }
 
     public int ChooseDoor(List<int> doors)
     {
-        throw new NotImplementedException();
+        _playerDoorChoice = _rand.Next(doors.Count);
+        return _playerDoorChoice;
     }
 }

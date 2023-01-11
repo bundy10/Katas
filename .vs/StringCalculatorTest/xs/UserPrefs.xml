@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{D2FDB50D-6C57-4D0B-A84D-E11AACC7B8AB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StringCalculator/CalculateString.cs">
+    <Files>
+      <File FileName="StringCalculator/Validator/Validation.cs" Line="28" Column="1" />
+      <File FileName="StringCalculatorTest/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="StringCalculator/CalculateString.cs" Line="21" Column="9" />
+      <File FileName="StringCalculator/Program.cs" Line="1" Column="1" />
+      <File FileName="StringCalculator/Numbers/Numbers.cs" Line="24" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StringCalculatorTest" expanded="True">
+            <Node name="StringCalculator" expanded="True">
+              <Node name="delimiters" expanded="True" />
+              <Node name="Numbers" expanded="True" />
+              <Node name="Validator" expanded="True" />
+              <Node name="CalculateString.cs" selected="True" />
+            </Node>
+            <Node name="StringCalculatorTest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="StringCalculatorTest" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.StringCalculatorTest PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

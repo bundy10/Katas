@@ -1,10 +1,9 @@
-namespace MontyHallTest;
+namespace MontyHallv2Test;
 
 public class UnitTest1
 {
     [Fact]
     public void Test1()
     {
-        
     }
 }
