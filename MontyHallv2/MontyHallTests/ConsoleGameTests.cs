@@ -12,7 +12,7 @@ public class ConsoleGameTests
 {
     private readonly List<Door> _doors;
     private readonly ConsoleGame _consoleGame = new();
-    private const int CarDoor = 0; //ok
+    private const int CarDoor = 0; 
 
     public ConsoleGameTests()
     {
