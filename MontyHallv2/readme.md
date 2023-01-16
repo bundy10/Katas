@@ -20,7 +20,7 @@ However when I wrote a mockiest test and ensure the SUT is talking properly to i
 the mock tests are therefore more coupled to the implementations of the SUT dependencies.
 changing the nature of calls to dependencies will cause the mock tests to break.
 
-what I found the most useful when choosing to use a mock or a classic test was determining if the SUT has very awkward dependencies such as -- 
+what I found the most useful when choosing to use a mock or a classic test was determining if the SUT has very awkward dependencies.
 
 As you can see in the commits after all refactors I ended up just preferring to use regular tests when possible and used mocks when using a test double was necessary. I am not really a fan of stubs and fakes, I don't like 
 writing fixture setups as I believe its too much effort and prefer making mocks with every test. However I can see that with Fixture Setups you can reuse them with multiple test. But I can't get over the broad capabilities a mocking framework gives you
