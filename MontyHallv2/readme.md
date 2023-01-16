@@ -1,3 +1,12 @@
+
+## Kata name:
+
+Monty Hall
+
+## Kata description link:
+
+https://github.com/MYOB-Technology/General_Developer/blob/main/katas/kata-monty-hall/kata-monty-hall.md
+
 # Testing Strategy
 
 ### Testing approach and integration testing.
@@ -16,7 +25,6 @@ what I found the most useful when choosing to use a mock or a classic test was d
 As you can see in the commits after all refactors I ended up just preferring to use regular tests when possible and used mocks when using a test double was necessary. I am not really a fan of stubs and fakes, I don't like 
 writing fixture setups as I believe its too much effort and prefer making mocks with every test. However I can see that with Fixture Setups you can reuse them with multiple test. But I can't get over the broad capabilities a mocking framework gives you
 over writing your own stubs and fakes. I believe the best tested program is when you verify the state of the SUT and the behaviour I found that using mocks best achieves this.
-
 
 
 
@@ -101,7 +109,7 @@ interfaces will remove nasty side effects around your code as changing an interf
 Level 4
 
 I understood that it is important to make sure every single method either be a command that performs a task or a query that returns data to the caller and not both.
-with single responsibility it was easy to distinguish this. 
+with single responsibility it was easy to distinguish this. for example most of my methods were to manipulate doors objects and some methods return data such as a bool depending on the data contained within the door objects.
 
 
 
